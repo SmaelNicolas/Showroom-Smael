@@ -36,6 +36,7 @@ body{
 
 .header__logo:hover{
   transform: translateX(5px)
+  translateY(5px)
   scale(0.9);
 }
 
@@ -89,6 +90,7 @@ body{
 .main h2{
   font-family:Biko_Bold;
   font-size: 10em;
+  text-shadow: 10px -5px rgb(202, 201, 201);
 }
 
 .main__destacados{
@@ -304,6 +306,7 @@ body{
   .header__logo img{
       height: auto;
       margin-top: 10px;
+      margin-bottom: 0px;
     }
 
   .header__ul{
