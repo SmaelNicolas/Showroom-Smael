@@ -5,6 +5,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   font-family: Biko;
+  text-align: center;
 }
 
 @font-face { font-family: Biko; src: url('./biko_font/Biko_Regular.otf');
@@ -13,9 +14,11 @@
 @font-face { font-family: Biko_Bold; font-weight: bold; src: url('./biko_font/Biko_Bold.otf');
 }
 
+
 body{
   width: 100%;
 }
+
 .header{
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +38,7 @@ body{
 
 .header__logo:hover{
   transform: translateX(5px)
+  translateY(5px)
   scale(0.9);
 }
 
@@ -48,15 +52,24 @@ body{
   margin-right: 10px;
   height: auto;
 }
-
+      
 .header__ul__responsive{
-  display: none;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1,1fr);
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    gap: 1px;
 }
 
 .header ul li{
-  list-style-type: none;
-  margin: 15px;
-  text-align: center;
+ list-style-type: none;
+ margin: 15px;
+}
+
+.header ul li a {
+  text-decoration: none;
 }
 
 .header__text--color{
@@ -66,10 +79,9 @@ body{
 
 .header ul li:hover{
   -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
-        animation: pulsate-bck 0.5s ease-in-out infinite both;
-        
-      }
-
+  animation: pulsate-bck 0.5s ease-in-out infinite both;
+  
+}
 .grid{
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
@@ -88,34 +100,39 @@ body{
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center; 
-  background: linear-gradient(180deg, rgba(246,240,246,1) 3%, rgba(18,2,4,0.7063200280112045) 100%);
   height: auto;
+  background-color: rgba(7, 7, 7, 0.397);
 }
-            
+
 .footer__datos{
-  text-align: center;
-  margin: 15px;
+  font-family:Biko_Bold;
 }
-            
+
+.texto{
+  margin-bottom: 0px;
+  font-weight: 700;
+  font-family:Biko_Bold;
+  color: rgb(0, 0, 0); 
+}
 .footer__redes{
   display: flex;
   flex-wrap: wrap;
   height: 100px;
   gap: 100px;
+  align-items: center;  
   margin-right: 30px;
-  align-items: center;
 }
 
 /* CLASES ANIMACION latido*/
 .heartbeat {
-    -webkit-animation: heartbeat 1.5s linear 3s infinite both;
-    animation: heartbeat 1.5s linear 3s infinite both;
+  -webkit-animation: heartbeat 5.5s linear 6s infinite both;
+  animation: heartbeat 5.5s linear 6s infinite both;
 }
 
 /* CLASES ANIMACION pulsacion*/
 .pulsate-bck {
-     -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
-     animation: pulsate-bck 0.5s ease-in-out infinite both;
+   -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+   animation: pulsate-bck 1.5s ease-in-out infinite both;
 }
  
 
