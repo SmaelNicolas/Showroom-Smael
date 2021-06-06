@@ -90,6 +90,18 @@ body{
 .imgCarousel{
  object-fit: cover;
  }
+
+.carousel__img--size{
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+
+.carouselArrows{
+   border-radius: 50%;
+   color: black;
+   border: 1px solid black ;
+ }
  
 .main h2{
   font-family:Biko_Bold;
@@ -299,7 +311,7 @@ body{
   }
 
   .carousel-item{
-  min-height: 650px;
+  max-height: 450px;
   }
 
   .main h2{
@@ -337,7 +349,7 @@ body{
   }
 
   .carousel-item{
-  min-height: 190px;
+  max-height: 190px;
   }
 
   .header__ul{
