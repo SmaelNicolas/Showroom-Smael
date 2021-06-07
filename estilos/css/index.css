@@ -80,7 +80,7 @@ body{
 }
 
 /*  HEADER RESPONSIVE ANIMACION*/
-.header__ul__responsive:hover{
+.header__ul__responsive__li:hover{
   -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
   animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
