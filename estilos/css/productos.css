@@ -35,6 +35,10 @@ body{
   width: auto;
 }
 
+.header__logo__img{
+  width: 250px;
+}
+
 .header__hide{
   font-size: 0px;
 }

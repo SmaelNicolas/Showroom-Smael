@@ -1,0 +1,13 @@
+.carousel{
+
+    &-item{
+    max-height: 800px;
+    }
+    &__img--size{
+        object-fit: contain;
+    }
+    &__arrows{
+        border-radius: 50%;
+    }
+    
+}

@@ -1,19 +1,3 @@
-body{
-    color:black;
-}
+@import 'estilos/scss/core/reset';
 
-h1{
-    text-align: center;
-}
-
-h2{
-    size:19px;
-}
-
-body{
-    background-color: azure;
-}
-
-h4{
-    text-align: center;
-}
+@import 'estilos/scss/abstracts/fonts'
