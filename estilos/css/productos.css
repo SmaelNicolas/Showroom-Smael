@@ -87,7 +87,7 @@ body{
   animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
 
-.grid{
+.main__grid{
   display: grid;
   grid-template-columns: repeat(2 ,1fr);
   grid-template-rows: repeat(2 ,1fr);
@@ -96,7 +96,7 @@ body{
   gap: 1em;
 }
     
-.grid img{
+.main__grid__img{
   width: 100%;
 }
 

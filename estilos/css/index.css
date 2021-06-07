@@ -112,7 +112,7 @@ body{
 .main__destacados{
   display: grid; 
   grid-template-columns: repeat(3, 1fr); 
-  grid-gap: 1em;
+  gap: 1em;
   padding-top: 5px;
   margin: 5px 5px;
 }
