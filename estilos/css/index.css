@@ -199,13 +199,6 @@ body{
   animation: heartbeat 5.5s linear 6s infinite both;
 }
 
-/* CLASES ANIMACION pulsacion*/
-.pulsate-bck {
-   -webkit-animation: pulsate-bck 0.3s ease-in-out infinite both;
-   animation: pulsate-bck 2.5s ease-in-out infinite both;
-}
-
-
 /*KEYFRAME latido*/
 @-webkit-keyframes heartbeat {
   from {

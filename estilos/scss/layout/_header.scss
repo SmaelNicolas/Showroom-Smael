@@ -55,8 +55,8 @@
             margin-right: 0.9em;
 
             &::hover{
-                -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
-                animation: pulsate-bck 0.5s ease-in-out infinite both;
+                 -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+                 animation: pulsate-bck 0.5s ease-in-out infinite both;
             }
         }
       }

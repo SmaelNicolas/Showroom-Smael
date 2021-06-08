@@ -52,6 +52,11 @@
             &--size{
                 font-size: 3em;
             }
+        
+            &--efect{
+                -webkit-animation: heartbeat 5.5s linear 6s infinite both;
+                animation: heartbeat 5.5s linear 6s infinite both;
+            }
         }
     }
 }
