@@ -3,7 +3,7 @@
     &__titulo__h2{
         font-family: BikoBold;
         font-size: 10vw;
-        text-shadow: 10px -5px $shadowcolor2;
+        text-shadow: 5px -2px $shadowcolor2;
     }
 
     &__destacados{
@@ -21,16 +21,16 @@
             border: 2px solid $color-black;
             border-radius: 25px;
 
+            &::hover{
+                box-shadow: 0px 0px 30px 5px $shadowcolor2;
+            }
+            
             &__h3{
                 text-decoration: underline;
             }
 
             &__texto{
                 text-align: justify;
-            }
-
-            &::hover{
-                box-shadow: 0px 0px 30px 5px $shadowcolor2;
             }
 
             &__img{

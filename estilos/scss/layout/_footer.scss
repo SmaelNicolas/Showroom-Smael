@@ -1,5 +1,6 @@
 .footer{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center; 
@@ -37,11 +38,11 @@
     }
 
     &__redes{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        @extend .footer;
         gap: 5em;
         align-items: center;
+        height: unset;
+        margin-top: unset;
 
         &__icon{
 
