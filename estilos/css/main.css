@@ -267,7 +267,7 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 250px;
-  margin-top: 100px;
+  margin-top: calc(150px - 50px);
   background-color: black; }
   .footer__datos__texto {
     text-align: justify;
