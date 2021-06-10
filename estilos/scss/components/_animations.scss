@@ -1,15 +1,16 @@
-.footer__redes__icon--efect {
+.heartbeat {
   -webkit-animation: heartbeat 5.5s linear 6s infinite both;
   animation: heartbeat 5.5s linear 6s infinite both;
 }
 
-.header__ul__li:hover{
+.pulsate-bck{
   -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
   animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
 
-.header__ul__responsive__li:hover{
-  @extend .header__ul__li:hover
+.color-change-2x {
+	-webkit-animation: color-change-2x 2s linear infinite alternate both;
+	        animation: color-change-2x 2s linear infinite alternate both;
 }
 
 
@@ -114,5 +115,22 @@
             transform: scale(1);
     -webkit-animation-timing-function: ease-out;
             animation-timing-function: ease-out;
+  }
+}
+
+@-webkit-keyframes color-change-2x {
+  0% {
+    background: #19dcea;
+  }
+  100% {
+    background: #b22cff;
+  }
+}
+@keyframes color-change-2x {
+  0% {
+    background: #f6fbfc;
+  }
+  100% {
+    background: #d9fa8b69;
   }
 }

@@ -43,14 +43,14 @@
 }
 
 /*Media Queries  1100-650*/
-@media only screen and (max-width: 1100px) and (min-width: $breakpoint-tablet){
+@media only screen and (max-width: $pcxl) and (min-width: $tablet){
     .main__cardbox:hover{
        cursor: unset;
   }
 }
 
 /*Media Queries  649-320*/
-@media only screen and (max-width: $breakpoint-tablet) and (min-width: $breakpoint-smartphone){
+@media only screen and (max-width: $tablet) and (min-width: $smartphone){
     .main__destacados{
         display: flex;
         flex-direction: column;
