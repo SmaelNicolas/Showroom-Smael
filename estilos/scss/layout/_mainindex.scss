@@ -21,7 +21,7 @@
             border: 2px solid $color-black;
             border-radius: 25px;
 
-            &::hover{
+            &:hover{
                 box-shadow: 0px 0px 30px 5px $shadowcolor2;
             }
             
@@ -51,16 +51,23 @@
 
 /*Media Queries  649-320*/
 @media only screen and (max-width: $tablet) and (min-width: $smartphone){
-    .main__destacados{
+    .main{
+    
+        &__titulo__h2{
+        text-shadow: 2px -2px $shadowcolor2;
+        }
+    
+        &__destacados{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 45px;
-    }
+        }
 
-    .main__cardbox:hover{
+        &__cardbox:hover{
         cursor: unset;
+        }
     }
 }
 
