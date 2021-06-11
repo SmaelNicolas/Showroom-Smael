@@ -57,8 +57,8 @@
             }
 
             &--efect{
-                -webkit-animation: heartbeat 5.5s linear 6s infinite both;
-                animation: heartbeat 5.5s linear 6s infinite both;
+                -webkit-animation: heartbeat 10s linear 6s infinite both;
+                animation: heartbeat 10s linear 6s infinite both;
             }
         }
     }
@@ -75,7 +75,8 @@
 @media only screen and (max-width: $tablet) and (min-width: $smartphone){
     .footer{
         flex-direction: column-reverse;
-    
+         height: 350px;
+         padding-top: 25px;
 
          &__datos__texto{
             text-align: center;
