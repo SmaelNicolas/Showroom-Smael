@@ -221,7 +221,7 @@ body {
     flex-direction: column;
     padding: 1rem;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.897);
     border-radius: 25px; }
     .main__destacados__cardbox:hover {
       box-shadow: 0px 0px 30px 5px rgba(15, 15, 15, 0.575); }
@@ -232,7 +232,7 @@ body {
     .main__destacados__cardbox__img {
       width: 100%;
       border-radius: 5%;
-      border: 1px dotted black; }
+      border: 1px dotted rgba(0, 0, 0, 0.897); }
 
 /*Media Queries  1100-650*/
 @media only screen and (max-width: 1100px) and (min-width: 650px) {
@@ -271,7 +271,7 @@ body {
   align-items: center;
   height: 250px;
   margin-top: calc(150px - 50px);
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.897); }
   .footer__datos__texto {
     text-align: justify;
     color: #b1acac; }
