@@ -2,8 +2,8 @@
 
     &__grid{
     display: grid;
-    grid-template-columns: $grid-2x2-colums ;
-    grid-template-rows: $grid-2x2-rows;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: repeat(2 ,1fr);
     justify-items: center;
     align-items: center;
     gap: 1em;

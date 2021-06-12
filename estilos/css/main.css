@@ -273,12 +273,10 @@ body {
   margin-top: calc(150px - 50px);
   background-color: rgba(0, 0, 0, 0.897); }
   .footer__datos__texto {
-    text-align: justify;
+    text-align: center;
     color: #b1acac; }
-  .footer__datos__h3--size {
+  .footer__datos--size {
     font-size: 2em; }
-  .footer__datos__h4--size {
-    font-size: 1.8em; }
   .footer__linea {
     height: 60%;
     width: 5px;

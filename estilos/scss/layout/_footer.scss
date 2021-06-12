@@ -11,23 +11,13 @@
     &__datos{
         
         &__texto{
-            text-align: justify;
+            text-align: center;
             color : $fontcolor2;
         }
 
-        &__h3{
-
-            &--size{
+        &--size{
                 font-size: 2em;
             }
-        }
-
-        &__h4{
-
-            &--size{
-                font-size: 1.8em;
-            }
-        }
     }
 
     &__linea{
