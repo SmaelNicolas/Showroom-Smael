@@ -3916,3 +3916,11 @@ node_modules/yargs-parser/node_modules/camelcase/package.json
 node_modules/yargs-parser/node_modules/camelcase/readme.md
 package-lock.json
 package.json
+node_modules/boxen/node_modules/term-size/index.d.ts
+node_modules/boxen/node_modules/term-size/index.js
+node_modules/boxen/node_modules/term-size/license
+node_modules/boxen/node_modules/term-size/readme.md
+node_modules/boxen/node_modules/term-size/vendor/.DS_Store
+node_modules/boxen/node_modules/term-size/vendor/macos/.DS_Store
+node_modules/boxen/node_modules/term-size/vendor/macos/term-size
+node_modules/boxen/node_modules/term-size/vendor/windows/term-size.exe

@@ -118,16 +118,16 @@ body {
 /*KEYFRAME cambios de color*/
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #d2d4d457; }
+    background: #ecf1f160; }
   100% {
-    background: rgba(190, 188, 188, 0.37); } }
+    background: rgba(177, 172, 172, 0.315); } }
 
 /*KEYFRAME cambios de color*/
 @keyframes color-change-2x {
   0% {
-    background: #a8a8a428; }
+    background: #ecf1f160; }
   100% {
-    background: rgba(175, 173, 168, 0.267); } }
+    background: rgba(177, 172, 172, 0.315); } }
 
 .header {
   display: flex;
@@ -266,8 +266,7 @@ body {
     cursor: unset; } }
 
 .main__productos {
-  background: #959090;
-  background: linear-gradient(180deg, rgba(149, 144, 144, 0.0872724) 0%, rgba(0, 0, 0, 0.143295) 100%);
+  background-color: rgba(177, 172, 172, 0.315);
   padding-bottom: 50px; }
   .main__productos__grid {
     display: grid;
