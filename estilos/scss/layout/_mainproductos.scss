@@ -26,7 +26,7 @@
                 &__#{$cantidad_html}x#{$cantidad_imagenes}{
                     width: 500px;
                     height: 550px;
-                    background-image: url(/estilos/css/img/#{$cantidad_html}#{$cantidad_imagenes}.jpeg);
+                    background-image: url(./img/img/#{$cantidad_html}#{$cantidad_imagenes}.jpeg);
                     background-position: center;
                     background-size: cover;
                     background-repeat: no-repeat;
