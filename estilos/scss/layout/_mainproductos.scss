@@ -1,17 +1,96 @@
 .main__productos{
 
+    background: rgb(254,241,241);
+    background: linear-gradient(171deg, rgba(254,241,241,1) 0%, rgba(226,217,189,0.4822303921568627) 49%, rgba(240,233,233,0) 100%);
+    padding-bottom: 50px;
+
     &__grid{
         display: grid;
-        grid-template-columns: repeat(2 ,1fr);
-        grid-template-rows: repeat(2 ,1fr);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "div div"
+        "div div";
         justify-items: center;
         align-items: center;
-        gap: 1em;
+        gap: 2em;
+        padding-top: 15px;
     
-
-        &__estilo{
-            width: 100%;
+        /* 1er @for > Cantidad de htmls , en mi caso tengo 4 productos con el mismo main*/
+           /* 2do @for > Cantidad de imagenes que quiero agregar*/
+                /*Cambie le nombre de las imagenes a la forma ixn , por ejemplo remera es el 1er html entonces la 1er imagen de remera va a ser 1x1, la segunda 1x2 y asi con todas las imagenes, a medida q agrego imagenes agreo un div con la clase ixn*/
+        @for $cantidad_html from 1 through 4 {
+          
+            @for $cantidad_imagenes from 1 through 4 {
+                
+                &__#{$cantidad_html}x#{$cantidad_imagenes}{
+                    width: 500px;
+                    height: 550px;
+                    background-image: url(/img/#{$cantidad_html}#{$cantidad_imagenes}.jpeg);
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    border: 1px solid black;
+                    border-radius: 10px;
+                }
+            }
+            
         }
 
+    }
+}
+
+/*Media Queries  1100-650*/
+@media only screen and (max-width: $pcxl) and (min-width: $tablet){
+    .main__productos{
+
+        &__grid{
+            grid-template-columns: auto ;
+            grid-template-rows: auto auto auto auto;  
+            grid-template-areas: 
+            "div"
+            "div"
+            "div"
+            "div";
+
+            @for $cantidad_html from 1 through 4 {
+                
+                 @for $cantidad_imagenes from 1 through 4 {
+                
+                    &__#{$cantidad_html}x#{$cantidad_imagenes}{
+                         width: 600px;
+                         height: 700px;
+                         }
+                }
+            }
+        }
+    }
+    
+}
+
+/*Media Queries  649-320*/
+@media only screen and (max-width: $tablet) and (min-width: $smartphone){
+    .main__productos{
+
+        &__grid{
+             grid-template-columns: auto ;
+             grid-template-rows: auto auto auto auto;  
+             grid-template-areas: 
+             "div"
+             "div"
+             "div"
+             "div";
+
+             @for $cantidad_html from 1 through 4 {
+                
+                 @for $cantidad_imagenes from 1 through 4 {
+                
+                    &__#{$cantidad_html}x#{$cantidad_imagenes}{
+                         width: 300px;
+                         height: 400px;
+                         }
+                }
+            }
+        }
     }
 }

@@ -132,8 +132,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  padding-bottom: 10px; }
+  width: 100%; }
   .header--efect {
     -webkit-animation: color-change-2x 2s linear infinite alternate both;
     animation: color-change-2x 2s linear infinite alternate both; }
@@ -196,14 +195,26 @@ body {
         .header__ul__responsive__li__a__img {
           width: 60px; } }
 
-.carousel-item {
-  max-height: 800px; }
+.carousel {
+  margin-top: 50px; }
+  .carousel-inner {
+    border-radius: 1%; }
+  .carousel-item {
+    max-height: 800px; }
+  .carousel__img--size {
+    object-fit: contain; }
+  .carousel__arrows {
+    border-radius: 50%; }
 
-.carousel__img--size {
-  object-fit: contain; }
+/*Media Queries  1100-650*/
+@media only screen and (max-width: 1100px) and (min-width: 650px) {
+  .carousel {
+    margin: 20px 0px 10px 0px; } }
 
-.carousel__arrows {
-  border-radius: 50%; }
+/*Media Queries  649-320*/
+@media only screen and (max-width: 650px) and (min-width: 320px) {
+  .carousel {
+    margin: 20px 0px 10px 0px; } }
 
 .main__titulo__h2 {
   font-family: BikoBold;
@@ -252,15 +263,276 @@ body {
   .main__cardbox:hover {
     cursor: unset; } }
 
-.main__productos__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  justify-items: center;
-  align-items: center;
-  gap: 1em; }
-  .main__productos__grid__estilo {
-    width: 100%; }
+.main__productos {
+  background: #fef1f1;
+  background: linear-gradient(171deg, #fef1f1 0%, rgba(226, 217, 189, 0.48223) 49%, rgba(240, 233, 233, 0) 100%);
+  padding-bottom: 50px; }
+  .main__productos__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: "div div" "div div";
+    justify-items: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 15px;
+    /* 1er @for > Cantidad de htmls , en mi caso tengo 4 productos con el mismo main*/
+    /* 2do @for > Cantidad de imagenes que quiero agregar*/
+    /*Cambie le nombre de las imagenes a la forma ixn , por ejemplo remera es el 1er html entonces la 1er imagen de remera va a ser 1x1, la segunda 1x2 y asi con todas las imagenes, a medida q agrego imagenes agreo un div con la clase ixn*/ }
+    .main__productos__grid__1x1 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/11.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__1x2 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/12.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__1x3 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/13.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__1x4 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/14.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__2x1 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/21.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__2x2 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/22.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__2x3 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/23.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__2x4 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/24.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__3x1 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/31.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__3x2 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/32.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__3x3 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/33.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__3x4 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/34.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__4x1 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/41.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__4x2 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/42.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__4x3 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/43.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__4x4 {
+      width: 500px;
+      height: 550px;
+      background-image: url(/img/44.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+
+/*Media Queries  1100-650*/
+@media only screen and (max-width: 1100px) and (min-width: 650px) {
+  .main__productos__grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "div" "div" "div" "div"; }
+    .main__productos__grid__1x1 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__1x2 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__1x3 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__1x4 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__2x1 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__2x2 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__2x3 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__2x4 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__3x1 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__3x2 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__3x3 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__3x4 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__4x1 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__4x2 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__4x3 {
+      width: 600px;
+      height: 700px; }
+    .main__productos__grid__4x4 {
+      width: 600px;
+      height: 700px; } }
+
+/*Media Queries  649-320*/
+@media only screen and (max-width: 650px) and (min-width: 320px) {
+  .main__productos__grid {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "div" "div" "div" "div"; }
+    .main__productos__grid__1x1 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__1x2 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__1x3 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__1x4 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__2x1 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__2x2 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__2x3 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__2x4 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__3x1 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__3x2 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__3x3 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__3x4 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__4x1 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__4x2 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__4x3 {
+      width: 300px;
+      height: 400px; }
+    .main__productos__grid__4x4 {
+      width: 300px;
+      height: 400px; } }
 
 .footer {
   display: flex;
@@ -269,11 +541,11 @@ body {
   justify-content: space-around;
   align-items: center;
   height: 250px;
-  margin-top: calc(150px - 50px);
   background-color: rgba(0, 0, 0, 0.897); }
   .footer__datos__texto {
     text-align: center;
-    color: #b1acac; }
+    color: #b1acac;
+    margin-bottom: 1rem; }
   .footer__datos--size {
     font-size: 2em; }
   .footer__linea {
@@ -296,6 +568,21 @@ body {
     .footer__redes__icon--efect {
       -webkit-animation: heartbeat 10s linear 6s infinite both;
       animation: heartbeat 10s linear 6s infinite both; }
+
+@media only screen and (max-width: 700px) {
+  .footer {
+    flex-direction: column-reverse;
+    height: 350px;
+    padding-top: 25px; }
+    .footer__datos__texto {
+      text-align: center; }
+    .footer__linea {
+      width: 60%;
+      height: 5px;
+      background-color: #83837f;
+      border-radius: 50%; }
+    .footer__redes {
+      gap: 15px; } }
 
 /*Media Queries  1100-650*/
 @media only screen and (max-width: 1100px) and (min-width: 650px) {

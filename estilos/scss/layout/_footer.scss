@@ -5,14 +5,14 @@
     justify-content: space-around;
     align-items: center; 
     height: 250px;
-    margin-top: calc(150px - 50px);
     background-color: $color-black;
 
     &__datos{
         
         &__texto{
             text-align: center;
-            color : $fontcolor2;
+            color : $fontcolor2;            
+            margin-bottom: 1rem;
         }
 
         &--size{
@@ -54,8 +54,34 @@
     }
 }
 
+@media only screen and (max-width: 700px){
+    .footer{
+        flex-direction: column-reverse;
+         height: 350px;
+         padding-top: 25px;
+
+         &__datos__texto{
+            text-align: center;
+        }
+   
+
+        &__linea{
+            width: 60%;
+            height: 5px;
+            background-color: rgb(131, 131, 127);
+            border-radius: 50%;
+        }
+  
+        &__redes{
+            gap: 15px;
+        }
+    }
+
+}
+
 /*Media Queries  1100-650*/
 @media only screen and (max-width: $pcxl) and (min-width: $tablet){
+    
     .footer__redes{
         gap:2.1em;
     }
