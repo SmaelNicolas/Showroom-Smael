@@ -1,15 +1,17 @@
-.main{
+.main__productos{
 
     &__grid{
-    display: grid;
-    grid-template-columns: repeat(2 ,1fr);
-    grid-template-rows: repeat(2 ,1fr);
-    justify-items: center;
-    align-items: center;
-    gap: 1em;
-    }
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(2 ,1fr);
+        justify-items: center;
+        align-items: center;
+        gap: 1em;
+    
 
-    &__grid__img{
-        width: 100%;
+        &__estilo{
+            width: 100%;
+        }
+
     }
 }

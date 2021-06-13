@@ -252,16 +252,15 @@ body {
   .main__cardbox:hover {
     cursor: unset; } }
 
-.main__grid {
+.main__productos__grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   justify-items: center;
   align-items: center;
   gap: 1em; }
-
-.main__grid__img {
-  width: 100%; }
+  .main__productos__grid__estilo {
+    width: 100%; }
 
 .footer {
   display: flex;
