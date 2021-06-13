@@ -115,17 +115,19 @@ body {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out; } }
 
+/*KEYFRAME cambios de color*/
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #19dcea; }
+    background: #d2d4d457; }
   100% {
-    background: #b22cff; } }
+    background: rgba(190, 188, 188, 0.37); } }
 
+/*KEYFRAME cambios de color*/
 @keyframes color-change-2x {
   0% {
-    background: #f6fbfc; }
+    background: #a8a8a428; }
   100% {
-    background: #d9fa8b69; } }
+    background: rgba(175, 173, 168, 0.267); } }
 
 .header {
   display: flex;
@@ -226,8 +228,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
-  padding-top: 5px;
-  margin: 5px 5px; }
+  padding: 5px 10px 30px 10px; }
   .main__destacados__cardbox {
     display: flex;
     flex-direction: column;
@@ -266,7 +267,7 @@ body {
 
 .main__productos {
   background: #959090;
-  background: linear-gradient(180deg, rgba(149, 144, 144, 0.28055) 0%, rgba(0, 0, 0, 0.515844) 100%);
+  background: linear-gradient(180deg, rgba(149, 144, 144, 0.0872724) 0%, rgba(0, 0, 0, 0.143295) 100%);
   padding-bottom: 50px; }
   .main__productos__grid {
     display: grid;

@@ -10,8 +10,7 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 1em;
-        padding-top: 5px;
-        margin: 5px 5px;
+        padding: 5px 10px 30px 10px;
     
         &__cardbox{
             display: flex;

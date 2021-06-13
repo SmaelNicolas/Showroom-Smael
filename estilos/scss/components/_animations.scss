@@ -118,19 +118,22 @@
   }
 }
 
+/*KEYFRAME cambios de color*/
 @-webkit-keyframes color-change-2x {
   0% {
-    background: #19dcea;
+    background: #d2d4d457;
   }
   100% {
-    background: #b22cff;
+    background: rgba(190, 188, 188, 0.37);   
   }
 }
+
+/*KEYFRAME cambios de color*/
 @keyframes color-change-2x {
   0% {
-    background: #f6fbfc;
+    background: #a8a8a428;
   }
   100% {
-    background: #d9fa8b69;
+    background: rgba(175, 173, 168, 0.267);
   }
 }
