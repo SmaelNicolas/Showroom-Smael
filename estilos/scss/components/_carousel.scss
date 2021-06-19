@@ -1,5 +1,7 @@
 .carousel{
 
+    margin: 20px 0px 10px 0px;
+
     &-inner{
         border-radius: 1%;
     }
@@ -7,26 +9,13 @@
     &-item{
     max-height: 800px;
     }
+
     &__img--size{
         object-fit: contain;
     }
+
     &__arrows{
         border-radius: 50%;
     }
     
-}
-
-/*Media Queries  1100-650*/
-@media only screen and (max-width: $pcxl) and (min-width: $tablet){
-    .carousel{
-        margin: 20px 0px 10px 0px;
-    }
-    
-}
-
-/*Media Queries  649-320*/
-@media only screen and (max-width: $tablet) and (min-width: $smartphone){
-    .carousel{
-        margin: 20px 0px 10px 0px;
-    }
 }

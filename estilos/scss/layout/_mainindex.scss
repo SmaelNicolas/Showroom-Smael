@@ -1,5 +1,7 @@
 .main{
 
+    padding-bottom: 100px;    
+    
     &__titulo__h2{
         font-family: BikoBold;
         font-size: 10vw;
@@ -10,7 +12,7 @@
         display: grid;
         grid-template-columns: repeat(3,1fr);
         gap: 1em;
-        padding: 5px 10px 30px 10px;
+        padding: 5px 10px 0px 10px;
     
         &__cardbox{
             display: flex;

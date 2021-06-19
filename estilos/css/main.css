@@ -197,55 +197,45 @@ body {
         .header__ul__responsive__li__a__img {
           width: 60px; } }
 
-.carousel-inner {
-  border-radius: 1%; }
+.carousel {
+  margin: 20px 0px 10px 0px; }
+  .carousel-inner {
+    border-radius: 1%; }
+  .carousel-item {
+    max-height: 800px; }
+  .carousel__img--size {
+    object-fit: contain; }
+  .carousel__arrows {
+    border-radius: 50%; }
 
-.carousel-item {
-  max-height: 800px; }
-
-.carousel__img--size {
-  object-fit: contain; }
-
-.carousel__arrows {
-  border-radius: 50%; }
-
-/*Media Queries  1100-650*/
-@media only screen and (max-width: 1100px) and (min-width: 650px) {
-  .carousel {
-    margin: 20px 0px 10px 0px; } }
-
-/*Media Queries  649-320*/
-@media only screen and (max-width: 650px) and (min-width: 320px) {
-  .carousel {
-    margin: 20px 0px 10px 0px; } }
-
-.main__titulo__h2 {
-  font-family: BikoBold;
-  font-size: 10vw;
-  text-shadow: 5px -2px rgba(15, 15, 15, 0.575); }
-
-.main__destacados {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1em;
-  padding: 5px 10px 30px 10px; }
-  .main__destacados__cardbox {
-    display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    justify-content: space-between;
-    border: 2px solid rgba(0, 0, 0, 0.897);
-    border-radius: 25px; }
-    .main__destacados__cardbox:hover {
-      box-shadow: 0px 0px 30px 5px rgba(15, 15, 15, 0.575); }
-    .main__destacados__cardbox__h3 {
-      text-decoration: underline; }
-    .main__destacados__cardbox__texto {
-      text-align: justify; }
-    .main__destacados__cardbox__img {
-      width: 100%;
-      border-radius: 5%;
-      border: 1px dotted rgba(0, 0, 0, 0.897); }
+.main {
+  padding-bottom: 100px; }
+  .main__titulo__h2 {
+    font-family: BikoBold;
+    font-size: 10vw;
+    text-shadow: 5px -2px rgba(15, 15, 15, 0.575); }
+  .main__destacados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 5px 10px 0px 10px; }
+    .main__destacados__cardbox {
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      justify-content: space-between;
+      border: 2px solid rgba(0, 0, 0, 0.897);
+      border-radius: 25px; }
+      .main__destacados__cardbox:hover {
+        box-shadow: 0px 0px 30px 5px rgba(15, 15, 15, 0.575); }
+      .main__destacados__cardbox__h3 {
+        text-decoration: underline; }
+      .main__destacados__cardbox__texto {
+        text-align: justify; }
+      .main__destacados__cardbox__img {
+        width: 100%;
+        border-radius: 5%;
+        border: 1px dotted rgba(0, 0, 0, 0.897); }
 
 /*Media Queries  1100-650*/
 @media only screen and (max-width: 1100px) and (min-width: 650px) {
@@ -268,15 +258,13 @@ body {
 .main__productos {
   background: #959090;
   background: linear-gradient(180deg, rgba(149, 144, 144, 0.0872724) 0%, rgba(0, 0, 0, 0.143295) 100%);
-  padding-bottom: 50px; }
+  padding-bottom: 100px;
+  padding-top: 100px; }
   .main__productos__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: "div div" "div div";
-    justify-items: center;
-    align-items: center;
-    gap: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 8em;
     padding-top: 15px;
     /* 1er @for > Cantidad de htmls , en mi caso tengo 4 productos con el mismo main*/
     /* 2do @for > Cantidad de imagenes que quiero agregar*/
@@ -312,6 +300,15 @@ body {
       width: 500px;
       height: 550px;
       background-image: url(./img/14.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__1x5 {
+      width: 500px;
+      height: 550px;
+      background-image: url(./img/15.jpeg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -353,6 +350,15 @@ body {
       background-repeat: no-repeat;
       border: 1px solid black;
       border-radius: 10px; }
+    .main__productos__grid__2x5 {
+      width: 500px;
+      height: 550px;
+      background-image: url(./img/25.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
     .main__productos__grid__3x1 {
       width: 500px;
       height: 550px;
@@ -384,6 +390,15 @@ body {
       width: 500px;
       height: 550px;
       background-image: url(./img/34.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
+    .main__productos__grid__3x5 {
+      width: 500px;
+      height: 550px;
+      background-image: url(./img/35.jpeg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
@@ -425,116 +440,15 @@ body {
       background-repeat: no-repeat;
       border: 1px solid black;
       border-radius: 10px; }
-
-/*Media Queries  1100-650*/
-@media only screen and (max-width: 1100px) and (min-width: 650px) {
-  .main__productos__grid {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "div" "div" "div" "div"; }
-    .main__productos__grid__1x1 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__1x2 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__1x3 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__1x4 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__2x1 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__2x2 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__2x3 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__2x4 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__3x1 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__3x2 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__3x3 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__3x4 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__4x1 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__4x2 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__4x3 {
-      width: 600px;
-      height: 700px; }
-    .main__productos__grid__4x4 {
-      width: 600px;
-      height: 700px; } }
-
-/*Media Queries  649-320*/
-@media only screen and (max-width: 650px) and (min-width: 320px) {
-  .main__productos__grid {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "div" "div" "div" "div"; }
-    .main__productos__grid__1x1 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__1x2 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__1x3 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__1x4 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__2x1 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__2x2 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__2x3 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__2x4 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__3x1 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__3x2 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__3x3 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__3x4 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__4x1 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__4x2 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__4x3 {
-      width: 300px;
-      height: 400px; }
-    .main__productos__grid__4x4 {
-      width: 300px;
-      height: 400px; } }
+    .main__productos__grid__4x5 {
+      width: 500px;
+      height: 550px;
+      background-image: url(./img/45.jpeg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border: 1px solid black;
+      border-radius: 10px; }
 
 .footer {
   display: flex;
