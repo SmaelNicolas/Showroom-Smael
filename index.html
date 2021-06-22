@@ -34,7 +34,7 @@
 <body>
 
     <!--  HEADER   -->
-    <header class="header header--efect">
+    <header class="header header--efect" id="header">
 
         <!--Logo del emprendimiento-->
         <section class="header__logo ">
@@ -117,8 +117,17 @@
     </header>
     <!--  FIN HEADER   -->
 
+    <!-- BOTON toTop-->
+    <div>
+        <a href="#header" alt="toTOP">
+            <i class="fas fa-arrow-alt-circle-up toTop" alt="toTOP"></i>
+        </a>
+    </div>
+    <!--  FIN BOTON toTop -->
+
     <!--CAROUSEL-->
     <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="https://i.ibb.co/5ctBxhN/carousel1.jpg" class="d-block w-100 mx-auto " alt="imgcarousel1">
@@ -131,6 +140,7 @@
                 <img src="https://i.ibb.co/6HYfX86/carousel3.jpg" class="d-block w-100 mx-auto " alt="imagecarousel3">
             </div>
         </div>
+
         <a class="carousel-control-prev" href="#carouselExampleControls" alt="carouselcontrolprev" role="button"
             data-slide="prev">
             <span class="carousel-control-prev-icon bg-dark carousel__arrows" aria-hidden="true"></span>
@@ -153,6 +163,7 @@
         <!--Seccion Destacados-->
         <section class="main__destacados">
             <div class="main__destacados__cardbox">
+
                 <h3 class="main__destacados__cardbox_h3">Conjunto</h3>
                 <p class="main__destacados__cardbox__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Corrupti expedita obcaecati consequatur sit.
@@ -162,6 +173,7 @@
                 <img class="main__destacados__cardbox__img" src="https://i.ibb.co/rwt4RZj/destacados1.jpg"
                     alt="imgDestacada1">
             </div>
+
             <div class="main__destacados__cardbox">
                 <h3 class="main__destacados__cardbox_h3">Jean</h3>
                 <p class="main__destacados__cardbox__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -170,6 +182,7 @@
                 <img class="main__destacados__cardbox__img" src="https://i.ibb.co/sFkyLfW/destacados2.jpg"
                     alt="imgDestacada2">
             </div>
+
             <div class="main__destacados__cardbox">
                 <h3 class="main__destacados__cardbox_h3">Remera</h3>
                 <p class="main__destacados__cardbox__texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -195,7 +208,7 @@
                 Lunes a Viernes : 10:00 - 17:00
             </p>
             <p class="footer__datos__texto">
-                Sabados: Consultar por horario personalizado.
+                Sabados: Consultar horario personalizado.
             </p>
 
             <strong class="footer__datos__texto footer__datos--size">

@@ -100,9 +100,36 @@ body {
         display: flex;
         margin-bottom: 0; }
         .header__ul__responsive__li {
-          margin-right: 18px; }
+          margin-right: 45px; }
           .header__ul__responsive__li__a__img {
-            width: 42px; } }
+            width: 42px; }
+          .header__ul__responsive__li:hover {
+            -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+            animation: pulsate-bck 0.5s ease-in-out infinite both; }
+  @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+    50% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9); }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1); } }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+    50% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9); }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1); } } }
+
+@media only screen and (max-width: 800px) and (min-width: 650px) {
+  .header__ul__responsive__li {
+    margin-right: 20px; } }
 
 /*Media Queries  649-320*/
 @media only screen and (max-width: 650px) and (min-width: 320px) {
@@ -121,7 +148,38 @@ body {
         gap: 20%;
         padding: 0; }
         .header__ul__responsive__li__a__img {
-          width: 60px; } }
+          width: 60px; }
+          .header__ul__responsive__li__a__img:hover {
+            -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
+            animation: pulsate-bck 0.5s ease-in-out infinite both; }
+  @-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+    50% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9); }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1); } }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+      transform: scale(1); }
+    50% {
+      -webkit-transform: scale(0.9);
+      transform: scale(0.9); }
+    100% {
+      -webkit-transform: scale(1);
+      transform: scale(1); } } }
+
+.toTop {
+  color: rgba(0, 0, 0, 0.521);
+  position: fixed;
+  z-index: 1;
+  bottom: 5%;
+  right: 1%;
+  font-size: 2em; }
 
 .carousel {
   margin: 10px 0px 10px 0px; }
@@ -181,8 +239,7 @@ body {
 
 .main__productos {
   background-color: rgba(177, 172, 172, 0.315);
-  padding-bottom: 100px;
-  padding-top: 100px; }
+  padding: 100px 10px 100px 10px; }
   .main__productos__grid {
     display: flex;
     flex-wrap: wrap;

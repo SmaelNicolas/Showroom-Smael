@@ -11,28 +11,28 @@
   }
   
   &__logo{
-      margin:2px;
-      width: auto;
+        margin:2px;
+        width: auto;
 
-      &__img{
-          width: 250px;
-      }
-  }
+        &__img{
+            width: 250px;
+        }
+    }
 
   &__hide{
-      font-size: 0px;
+        font-size: 0px;
   }
 
   &__ul{
-      display:flex;
-      flex-wrap: nowrap;
-      margin:0;
-      padding-right: 25px;
-      
+        display:flex;
+        flex-wrap: nowrap;
+        margin:0;
+        padding-right: 25px;
 
-      &__li{
-        justify-content: center;
-        margin-left: 75px;
+
+        &__li{
+            justify-content: center;
+            margin-left: 75px;
 
         &__a{
             text-decoration: none;
@@ -43,8 +43,9 @@
         }
         
         &:hover{
-           @include pulsacion();
+            @include pulsacion();
         }
+
         }
 
         &__responsive{
@@ -67,17 +68,28 @@
                 margin-bottom: 0;
 
                 &__li{
-                    margin-right: 18px;
+                    margin-right: 45px;
                 
                     &__a__img{
                     width: 42px;
                     }
+
+                    &:hover{
+                        @include pulsacion();
+                    }
                 }
             }
         }
-    }
-    
+    } 
 }
+
+@media only screen and (max-width: 800px) and (min-width: $tablet){
+
+    .header__ul__responsive__li{
+        margin-right: 20px;
+    }
+}
+
 
 /*Media Queries  649-320*/
 @media only screen and (max-width: $tablet) and (min-width: $smartphone){
@@ -101,9 +113,12 @@
 
                 &__li__a__img{
                     width: 60px;
+
+                    &:hover{
+                        @include pulsacion();
+                    }
                 }
             }
         }
     }
-
 }
