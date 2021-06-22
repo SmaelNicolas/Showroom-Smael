@@ -7,8 +7,7 @@
   width: 100%;
 
   &--efect{
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-    animation: color-change-2x 2s linear infinite alternate both;
+    @include cambioColor();
   }
   
   &__logo{
@@ -44,9 +43,7 @@
         }
         
         &:hover{
-            /*@import pulsate-bck;*/
-            -webkit-animation: pulsate-bck 0.5s ease-in-out infinite both;
-            animation: pulsate-bck 0.5s ease-in-out infinite both;
+           @include pulsacion();
         }
         }
 

@@ -46,9 +46,8 @@
                 font-size: 3em;
             }
 
-            &--efect{
-                -webkit-animation: heartbeat 10s linear 6s infinite both;
-                animation: heartbeat 10s linear 6s infinite both;
+            &--efect:hover{
+                @include textRotate();
             }
         }
     }
