@@ -5,15 +5,10 @@
     padding-top: 100px;
 
     &__grid{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-template-areas: 
-        "div div"
-        "div div";
-        justify-items: center;
-        align-items: center;
-        gap: 2em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 8em;
         padding-top: 15px;
     
         /* 1er @for > Cantidad de htmls , en mi caso tengo 4 productos con el mismo main*/
@@ -21,7 +16,7 @@
                 /*Cambie le nombre de las imagenes a la forma ixn , por ejemplo remera es el 1er html entonces la 1er imagen de remera va a ser 1x1, la segunda 1x2 y asi con todas las imagenes, a medida q agrego imagenes agreo un div con la clase ixn*/
         @for $cantidad_html from 1 through 4 {
           
-            @for $cantidad_imagenes from 1 through 4 {
+            @for $cantidad_imagenes from 1 through 5 {
                 
                 &__#{$cantidad_html}x#{$cantidad_imagenes}{
                     width: 500px;
@@ -37,60 +32,5 @@
             
         }
 
-    }
-}
-
-/*Media Queries  1100-650*/
-@media only screen and (max-width: $pcxl) and (min-width: $tablet){
-    .main__productos{
-
-        &__grid{
-            grid-template-columns: auto ;
-            grid-template-rows: auto auto auto auto;  
-            grid-template-areas: 
-            "div"
-            "div"
-            "div"
-            "div";
-
-            @for $cantidad_html from 1 through 4 {
-                
-                 @for $cantidad_imagenes from 1 through 4 {
-                
-                    &__#{$cantidad_html}x#{$cantidad_imagenes}{
-                         width: 600px;
-                         height: 700px;
-                         }
-                }
-            }
-        }
-    }
-    
-}
-
-/*Media Queries  649-320*/
-@media only screen and (max-width: $tablet) and (min-width: $smartphone){
-    .main__productos{
-
-        &__grid{
-             grid-template-columns: auto ;
-             grid-template-rows: auto auto auto auto;  
-             grid-template-areas: 
-             "div"
-             "div"
-             "div"
-             "div";
-
-             @for $cantidad_html from 1 through 4 {
-                
-                 @for $cantidad_imagenes from 1 through 4 {
-                
-                    &__#{$cantidad_html}x#{$cantidad_imagenes}{
-                         width: 300px;
-                         height: 400px;
-                         }
-                }
-            }
-        }
     }
 }
