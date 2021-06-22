@@ -27,22 +27,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  width: 100%; }
-  .header--efect {
-    -webkit-animation: color-change-2x 2s linear infinite alternate both;
-    animation: color-change-2x 2s linear infinite alternate both; }
-
-@-webkit-keyframes color-change-2x {
-  0% {
-    background: #ecf1f160; }
-  100% {
-    background: rgba(177, 172, 172, 0.315); } }
-
-@keyframes color-change-2x {
-  0% {
-    background: #ecf1f160; }
-  100% {
-    background: rgba(177, 172, 172, 0.315); } }
+  width: 100%;
+  background-color: rgba(177, 172, 172, 0.192); }
   .header__logo {
     margin: 2px;
     width: auto; }
@@ -181,17 +167,18 @@ body {
   right: 1%;
   font-size: 2em; }
 
-.carousel {
-  margin: 10px 0px 10px 0px; }
-  .carousel-item {
-    max-height: 800px; }
-  .carousel__img--size {
-    object-fit: contain; }
-  .carousel__arrows {
-    border-radius: 50%; }
+.carousel-item {
+  max-height: 800px; }
+
+.carousel__img--size {
+  object-fit: contain; }
+
+.carousel__arrows {
+  border-radius: 50%; }
 
 .main {
-  padding-bottom: 100px; }
+  padding-bottom: 100px;
+  background-color: rgba(177, 172, 172, 0.192); }
   .main__titulo__h2 {
     font-family: BikoBold;
     font-size: 10vw;
@@ -238,7 +225,7 @@ body {
     cursor: unset; } }
 
 .main__productos {
-  background-color: rgba(177, 172, 172, 0.315);
+  background-color: rgba(177, 172, 172, 0.192);
   padding: 100px 10px 100px 10px; }
   .main__productos__grid {
     display: flex;
