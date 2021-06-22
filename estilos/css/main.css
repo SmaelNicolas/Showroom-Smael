@@ -163,7 +163,7 @@ body {
   color: rgba(0, 0, 0, 0.521);
   position: fixed;
   z-index: 1;
-  bottom: 5%;
+  bottom: 2%;
   right: 1%;
   font-size: 2em; }
 
@@ -416,6 +416,17 @@ body {
       background-repeat: no-repeat;
       border: 1px solid black;
       border-radius: 10px; }
+
+.webBy {
+  color: rgba(255, 255, 255, 0.521);
+  position: fixed;
+  z-index: 1;
+  bottom: 1%;
+  left: 0.1%;
+  font-size: 0.5em;
+  text-decoration: none;
+  writing-mode: vertical-rl;
+  letter-spacing: 2px; }
 
 .footer {
   display: flex;
