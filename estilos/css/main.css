@@ -198,9 +198,7 @@ body {
           width: 60px; } }
 
 .carousel {
-  margin: 20px 0px 10px 0px; }
-  .carousel-inner {
-    border-radius: 1%; }
+  margin: 10px 0px 10px 0px; }
   .carousel-item {
     max-height: 800px; }
   .carousel__img--size {
