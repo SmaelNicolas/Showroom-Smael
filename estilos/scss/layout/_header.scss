@@ -31,22 +31,27 @@
             justify-content: center;
             margin-left: 72px;
 
-        &__a{
-            text-decoration: none;
+            &__a{
+                text-decoration: none;
 
-            &__text--color{
-                color: $fontcolor;
+                &:hover{
+                color:black;
+                }
+            
+                &__text--color{
+                    color: $fontcolor;
+                }
             }
-        }
         
-        &:hover{
+            &:hover{
             @include pulsacion();
-        }
+            color:black;
+            }
 
         }
 
         &__responsive{
-        display: none;
+            display: none;
         }
     }
 }
