@@ -5,7 +5,7 @@
     background-color: $bgcolor;
 
     &__img--size{
-        max-height: 450px;
+        height: 650px;
         object-fit: cover;
         border-radius: 10px;
     }
@@ -18,11 +18,8 @@
 @media only screen and (max-width: $pcxl) and (min-width: $tablet){
     .carousel{
 
-        height: 350px;
-
         &__img--size{
-            height: 350px;
-            object-fit: cover;
+            height: 550px;
         }
     }    
 }
@@ -30,11 +27,8 @@
 @media only screen and (max-width: $tablet) and (min-width: $smartphone){
     .carousel{
 
-        height: 250px;
-
         &__img--size{
-            height: 250px;
-            object-fit: cover;
+            height: 350px;
         }
     }  
 }

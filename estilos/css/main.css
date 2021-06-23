@@ -174,25 +174,19 @@ body {
   padding: 30px 0px 10px 0px;
   background-color: rgba(177, 172, 172, 0.192); }
   .carousel__img--size {
-    max-height: 450px;
+    height: 650px;
     object-fit: cover;
     border-radius: 10px; }
   .carousel__arrows {
     border-radius: 50%; }
 
 @media only screen and (max-width: 1100px) and (min-width: 650px) {
-  .carousel {
-    height: 350px; }
-    .carousel__img--size {
-      height: 350px;
-      object-fit: cover; } }
+  .carousel__img--size {
+    height: 550px; } }
 
 @media only screen and (max-width: 650px) and (min-width: 320px) {
-  .carousel {
-    height: 250px; }
-    .carousel__img--size {
-      height: 250px;
-      object-fit: cover; } }
+  .carousel__img--size {
+    height: 350px; } }
 
 .main {
   padding-top: 50px;
