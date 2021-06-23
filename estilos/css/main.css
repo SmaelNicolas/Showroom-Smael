@@ -211,13 +211,14 @@ body {
       .main__destacados__cardbox:hover {
         box-shadow: 0px 0px 30px 5px rgba(15, 15, 15, 0.575); }
       .main__destacados__cardbox__h3 {
+        font-family: BikoBold;
         text-decoration: underline; }
       .main__destacados__cardbox__texto {
         text-align: justify; }
       .main__destacados__cardbox__img {
         width: 100%;
         border-radius: 5%;
-        border: 1px dotted rgba(0, 0, 0, 0.897); }
+        border: 2px dotted rgba(0, 0, 0, 0.897); }
 
 /*Media Queries  1100-650*/
 @media only screen and (max-width: 1100px) and (min-width: 650px) {
