@@ -1,15 +1,40 @@
 .carousel{
 
-    &-item{
-    max-height: 800px;
-    }
+    padding: 50px 0px 10px 0px;
+
+    background-color: $bgcolor;
 
     &__img--size{
-        object-fit: contain;
+        max-height: 450px;
+        object-fit: cover;
+        border-radius: 10px;
     }
 
     &__arrows{
         border-radius: 50%;
     }
-    
+}
+
+@media only screen and (max-width: $pcxl) and (min-width: $tablet){
+    .carousel{
+
+        height: 350px;
+
+        &__img--size{
+            max-height: 280px;
+            object-fit: fill;
+        }
+    }    
+}
+
+@media only screen and (max-width: $tablet) and (min-width: $smartphone){
+    .carousel{
+
+        height: 250px;
+
+        &__img--size{
+            max-height: 250px;
+            object-fit: fill;
+        }
+    }  
 }

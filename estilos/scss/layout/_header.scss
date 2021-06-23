@@ -29,7 +29,7 @@
 
         &__li{
             justify-content: center;
-            margin-left: 75px;
+            margin-left: 72px;
 
         &__a{
             text-decoration: none;
@@ -65,7 +65,7 @@
                 margin-bottom: 0;
 
                 &__li{
-                    margin-right: 45px;
+                    margin-right: 40px;
                 
                     &__a__img{
                     width: 42px;
@@ -83,7 +83,7 @@
 @media only screen and (max-width: 800px) and (min-width: $tablet){
 
     .header__ul__responsive__li{
-        margin-right: 20px;
+        margin-right: 15px;
     }
 }
 
