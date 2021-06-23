@@ -214,7 +214,11 @@ body {
         font-family: BikoBold;
         text-decoration: underline; }
       .main__destacados__cardbox__texto {
-        text-align: justify; }
+        text-align: justify;
+        line-height: 200%; }
+        .main__destacados__cardbox__texto__palabra {
+          color: #C10230;
+          font-size: x-large; }
       .main__destacados__cardbox__img {
         width: 100%;
         border-radius: 5%;
