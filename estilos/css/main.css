@@ -13,11 +13,11 @@ body {
 
 @font-face {
   font-family: Biko;
-  src: url(/estilos/biko_font/Biko_Regular.otf); }
+  src: url(./estilos/biko_font/Biko_Regular.otf); }
 
 @font-face {
   font-family: BikoBold;
-  src: url(/estilos/biko_font/Biko_Bold.otf); }
+  src: url(./estilos/biko_font/Biko_Bold.otf); }
 
 /* Animacion PULSACION*/
 /* Animacion ROTACION DE TEXTO */
