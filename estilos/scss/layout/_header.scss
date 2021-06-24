@@ -85,10 +85,10 @@
     } 
 }
 
-@media only screen and (max-width: 800px) and (min-width: $tablet){
+@media only screen and (max-width: $midTabletPc) and (min-width: $tablet){
 
     .header__ul__responsive__li{
-        margin-right: 15px;
+        margin-right: 20px;
     }
 }
 

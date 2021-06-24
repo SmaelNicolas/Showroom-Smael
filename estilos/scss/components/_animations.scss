@@ -35,31 +35,6 @@
         animation: pulsate-bck 0.5s ease-in-out infinite both;
 }
 
-/*Animacion CAMBIO DE COLOR*/
-@mixin cambioColor() {
-       
-        @-webkit-keyframes color-change-2x {
-                0% {
-                background: #ecf1f160;
-                }
-                100% {
-                background: rgba(177, 172, 172, 0.315);  
-                }
-        }
-
-        @keyframes color-change-2x {
-                0% {
-                background: #ecf1f160;
-                }
-                100% {
-                background: rgba(177, 172, 172, 0.315);
-                }
-        }
-
-        -webkit-animation: color-change-2x 2s linear infinite alternate both;
-	animation: color-change-2x 2s linear infinite alternate both;
-}
-
 /* Animacion ROTACION DE TEXTO */
 @mixin textRotate(){
 @-webkit-keyframes rotate-in-center {

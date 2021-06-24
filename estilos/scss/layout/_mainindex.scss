@@ -53,10 +53,24 @@
 }
 
 /*Media Queries  1100-650*/
-@media only screen and (max-width: $pcxl) and (min-width: $tablet){
+@media only screen and (max-width: $pcxl) and (min-width: $midTabletPc){
     .main__cardbox:hover{
        cursor: unset;
   }
+}
+
+@media only screen and (max-width: $midTabletPc) and (min-width: $tablet){
+
+    .main{
+        
+        &__destacados{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 45px;
+        }
+    }
 }
 
 /*Media Queries  649-320*/
