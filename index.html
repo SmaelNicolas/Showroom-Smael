@@ -9,7 +9,7 @@
         content="  Celebramos la belleza en todas sus formas. Todas las semanas nuevos ingresos de ropa y accesorios, ademas tips de moda y sorteos!">
 
     <meta name="keywords"
-        content="showroom , bahia blanca, 1928, ropa, mujer, remeras, jeans, sweaters accesorios, vestidos, plus, size, talles grandes, xxl, xl, regalos, saco, pollera, campera, ruanas, bufandas, morley, lanilla, tejidos, polera,">
+        content="1928 showroom , 1928showroom , showroom1928 , showroom 1928 , showroom , bahia blanca, 1928, ropa, mujer , dama , chicas , chica , amiga , indumentaria , indumentaria plus size , indumentaria para regalo , indumentaria xxl , remeras, jeans, sweaters , accesorios, vestidos, plus, size , plus size, talles grandes, xxl, xl , talle xxl , talle 4xl , talle 50 , talle 52 , talle 56 , ropa grande , suelta , jean talle , regalos, saco, pollera, campera, ruanas, bufandas, morley, lanilla, tejidos, polera, comercio , venta , prendas , precio , descuentos , gifts , cards , giftcard , cuotas , sin interes , ahora 12 , ahora 18 , cuota , dia de la madre , dia del amigo , cumpleaños , navidad , que regalar , regalos , aros , pulseras , anillos , horario ">
 
     <!--  TITULO  -->
     <title>1928Showroom ♥</title>
@@ -33,6 +33,8 @@
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
         </script>
 
+    <!-- SCRIPTS -->
+    <script src="./scripts/glider.js"></script>
 
     <!-- LINK SCSS MAIN -->
     <link rel="stylesheet" href="estilos/css/main.css">
@@ -43,6 +45,11 @@
 </head>
 
 <body>
+    <!--Mini barra top-->
+    <div class="minitop">
+        291 418-2420 - Panamá 1259, Bahia Blanca.
+    </div>
+    <!-- Fin mini barra top-->
 
     <!--  HEADER   -->
     <header class="header header--efect" id="header">
@@ -136,34 +143,44 @@
     </div>
     <!--  FIN BOTON toTop -->
 
-    <!--CAROUSEL-->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <!-- Glidder -->
+    <div class="glider-contain" id="productos">
 
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="https://i.ibb.co/R7BkTPk/1928-2min.jpg" class="d-block w-75 mx-auto carousel__img--size"
-                    alt="Imagen perchero ropa y logo">
-            </div>
-            <div class="carousel-item">
-                <img src="https://i.ibb.co/HFr5x2y/1928-63.jpg" class="d-block w-75 mx-auto  carousel__img--size"
-                    alt="Sweater y etiqueta  con skip liquido">
-            </div>
-            <div class="carousel-item">
-                <img src="https://i.ibb.co/YRw33Fy/carousel2.jpg" class="d-block w-75 mx-auto carousel__img--size"
-                    alt="Jeans y remeras organizados">
-            </div>
+        <div class="glider">
+            <div><img class="glider__imagen" src="https://i.ibb.co/kQY5HmQ/12.jpg"
+                    alt="1928 Showroom , Indumentaria y mas , instagram 1928Showroom"></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/XX0SwyR/11.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/GVHYy8X/10.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/d5P5b8Z/9.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/QnWPnPM/8.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/BtTRYKP/s3.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/1zJdknC/7.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/QXMkkDx/6.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/h8XRJxJ/4.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/yny2KSN/3.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/nQv9mGL/s1.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/jGXzd23/2.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/2Mjq4G8/1.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/WkDnWzX/14.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/R2R0j4j/13.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/JdRxGGB/5.jpg" alt=""></div>
+            <div><img class="glider__imagen" src="https://i.ibb.co/GC5rH37/16.jpg" alt=""></div>
         </div>
-
-        <a class="carousel-control-prev" href="#carouselExampleControls" alt="carousel control prev" role="button"
-            data-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark carousel__arrows" aria-hidden="true"></span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleControls" alt="carousel control next" role="button"
-            data-slide="next">
-            <span class="carousel-control-next-icon bg-dark carousel__arrows" aria-hidden="true"></span>
-        </a>
+        <button class="glider-prev">&laquo;</button>
+        <button class="glider-next">&raquo;</button>
+        <!-- <div id="dots"></div> -->
     </div>
-    <!--FIN CAROUSEL-->
+    <!-- fin Glidder  -->
+
+
+    <!-- Boton ver mas -->
+    <div class="button__container">
+
+        <a class="btn cta bg" onclick="location.href='https://www.instagram.com/1928showroom/'" type="button">V e r _ M
+            a s</a>
+
+    </div>
+    <!-- fin boton ver mas -->
 
     <!--  MAIN   -->
     <main id="destacados" class="main">
@@ -294,16 +311,6 @@
     </footer>
     <!-- FIN  FOOTER  -->
 
-    <!--  Scripts  -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
 </body>
 
 </html>

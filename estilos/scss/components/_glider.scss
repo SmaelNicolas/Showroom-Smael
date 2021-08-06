@@ -1,0 +1,110 @@
+.glider {
+    margin: 0 auto;
+    position: relative;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    transform: translateZ(0);
+    scroll-behavior: auto;
+    padding-top: 100px;  
+
+    &__imagen{
+            border: 3px solid black;
+            width: 450px;
+
+        }
+}
+    .glider-contain {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        background-color: $bgcolor;
+        height: 500px;
+    }
+    .glider-track {
+        transform: translateZ(0);
+        width: 99%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        z-index: 1;
+    }
+    .glider.draggable {
+        user-select: none;
+        cursor: -webkit-grab;
+        cursor: grab;
+    }
+        .glider.draggable .glider-slide img {
+        user-select: none;
+        pointer-events: none;
+    }
+        .glider.drag {
+        cursor: -webkit-grabbing;
+        cursor: grabbing;
+    }
+        .glider-slide {
+        user-select: none;
+        justify-content: center;
+        align-content: center;
+        width: 100%;
+        padding: 5px;
+    }
+    .glider-slide img {
+        max-width: 100%;
+    }
+    .glider::-webkit-scrollbar {
+        opacity: 0;
+        height: 0;
+    }
+    .glider-prev,.glider-next {
+        user-select: none;
+        position: absolute;
+        outline: none;
+        background: none;
+        padding: 0;
+        z-index: 2;
+        font-size: 40px;
+        text-decoration: none;
+        left: 0px;
+        border: 0 black;
+        top: 55%;
+        cursor: pointer;
+        color : $color-black;
+        opacity: 1;
+        line-height: 1;
+        transition: opacity .3s cubic-bezier(.17,.67,.83,.67),
+                    color .3s cubic-bezier(.17,.67,.83,.67);
+    }
+    
+    .glider-next {
+        right: 0px;
+        left: auto;
+    }
+    .glider-next.disabled,
+    .glider-prev.disabled {
+        opacity: .25;
+        color: #666;
+        cursor: default;
+    }
+    .glider-slide {
+        min-width: 150px;
+    }
+    .glider-hide {
+        opacity: 0;
+    }
+
+    
+    @media(max-width: 36em){
+        .glider::-webkit-scrollbar {
+            opacity: 1;
+            -webkit-appearance: none;
+            width: 7px;
+            height: 3px;
+        }
+        .glider::-webkit-scrollbar-thumb {
+            opacity: 1;
+            border-radius: 99px;
+            background-color: rgba(156, 156, 156, 0.25);
+            box-shadow: 0 0 1px rgba(255,255,255,.25);
+        }
+    }
