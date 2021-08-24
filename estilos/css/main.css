@@ -10,7 +10,7 @@
 
 body {
   width: calc(100% - 0);
-  background-color: rgba(177, 172, 172, 0.192); }
+  background-color: white; }
 
 @font-face {
   font-family: Biko;
@@ -28,7 +28,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: rgba(177, 172, 172, 0.192); }
+  background-color: white; }
   .header__logo {
     margin: 2px;
     width: auto; }
@@ -180,14 +180,13 @@ body {
   scroll-behavior: auto;
   padding-top: 100px; }
   .glider__imagen {
-    border: 3px solid black;
     width: 450px; }
 
 .glider-contain {
   width: 100%;
   margin: 0 auto;
   position: relative;
-  background-color: rgba(177, 172, 172, 0.192);
+  background-color: white;
   height: 500px; }
 
 .glider-track {
@@ -276,7 +275,7 @@ body {
   align-content: center;
   justify-content: center;
   width: auto;
-  background-color: rgba(177, 172, 172, 0.192); }
+  background-color: white; }
 
 .btn {
   cursor: pointer;
@@ -329,10 +328,10 @@ body {
 .main {
   padding-top: 50px;
   padding-bottom: 100px;
-  background-color: rgba(177, 172, 172, 0.192); }
+  background-color: white; }
   .main__titulo__h2 {
     font-family: BikoBold;
-    font-size: 15vw;
+    font-size: 14vw;
     text-shadow: 5px -2px rgba(15, 15, 15, 0.575); }
   .main__destacados {
     display: grid;
@@ -403,7 +402,7 @@ body {
     padding-right: 0px; } }
 
 .main__productos {
-  background-color: rgba(177, 172, 172, 0.192);
+  background-color: white;
   padding: 100px 10px 100px 10px; }
   .main__productos__grid {
     display: flex;
