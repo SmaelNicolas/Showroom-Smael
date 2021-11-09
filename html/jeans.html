@@ -11,14 +11,40 @@
     <meta name="keywords"
         content="1928 showroom , 1928showroom , showroom1928 , showroom 1928 , showroom , bahia blanca, 1928, ropa, mujer , dama , chicas , chica , amiga , indumentaria , indumentaria plus size , indumentaria para regalo , indumentaria xxl , remeras, jeans, sweaters , accesorios, vestidos, plus, size , plus size, talles grandes, xxl, xl , talle xxl , talle 4xl , talle 50 , talle 52 , talle 56 , ropa grande , suelta , jean talle , regalos, saco, pollera, campera, ruanas, bufandas, morley, lanilla, tejidos, polera, comercio , venta , prendas , precio , descuentos , gifts , cards , giftcard , cuotas , sin interes , ahora 12 , ahora 18 , cuota , dia de la madre , dia del amigo , cumpleaños , navidad , que regalar , regalos , aros , pulseras , anillos , horario ">
 
-    <title>1928Showroom ♥ - Jeans</title>
+    <link rel="icon" href="https://i.ibb.co/58rbvCQ/Logo.jpg">
+    <!--  TITULO  -->
+    <title>1928Showroom ♥</title>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4R9GYP08P7"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-4R9GYP08P7');
+    </script>
+
+    <!--  BOOTSTRAP CSS  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!--  BOOTSTRAP JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+
 
     <!-- LINK SCSS MAIN -->
     <link rel="stylesheet" href="../estilos/css/main.css">
 
+
     <!--  LINK KIT FONTAWESOME  -->
     <script src="https://kit.fontawesome.com/12873818e3.js" crossorigin="anonymous">
     </script>
+
+    <link rel="canonical" href="1928showroom.com.ar">
+    <link rel="home" href="1928showroom.com.ar">
 </head>
 
 <body>
@@ -33,7 +59,10 @@
 
         <!--Logo del emprendimiento-->
         <section class="header__logo ">
-            <img class="header__logo__img" src="https://i.ibb.co/8KPgndf/logo.png" alt="logo">
+            <a href="./../index.html">
+
+                <img class="header__logo__img" src="https://i.ibb.co/8KPgndf/logo.png" alt="logo de 1928 Showroom">
+            </a>
         </section>
 
         <!--H1 oculto-->
@@ -44,69 +73,50 @@
         <!-- Barra de navegacion  -->
         <ul class="header__ul">
 
+
+
             <li class="header__ul__li">
-                <a class=" header__ul__li__a header__ul__li__a__text--color" href="../index.html">Inicio</a>
+                <a class=" header__ul__li__a header__ul__li__a__text--color" href="remeras.html">remeras</a>
             </li>
 
             <li class="header__ul__li">
-                <a class=" header__ul__li__a header__ul__li__a__text--color" href="remeras.html">Remeras</a>
+                <a class="header__ul__li__a header__ul__li__a__text--color" href="jeans.html">jeans</a>
             </li>
 
             <li class="header__ul__li">
-                <a class="header__ul__li__a header__ul__li__a__text--color" href="jeans.html">Jeans</a>
+                <a class="header__ul__li__a header__ul__li__a__text--color" href="sweaters.html">sweaters</a>
             </li>
 
             <li class="header__ul__li">
-                <a class="header__ul__li__a header__ul__li__a__text--color" href="sweaters.html">Sweaters</a>
+                <a class="header__ul__li__a header__ul__li__a__text--color" href="accesorios.html">accesorios</a>
             </li>
 
             <li class="header__ul__li">
-                <a class="header__ul__li__a header__ul__li__a__text--color" href="accesorios.html">Accesorios</a>
-            </li>
-
-            <li class="header__ul__li">
-                <a class="header__ul__li__a header__ul__li__a__text--color" href="#footer">Contacto</a>
+                <a class="header__ul__li__a header__ul__li__a__text--color" href="#footer">contacto</a>
             </li>
 
         </ul>
 
-        <ul class="header__ul__responsive">
+        <div class="header__ul__responsive__icon menuIcon" id="menuButton"><i class="fas fa-bars"></i></div>
 
-            <li class="header__ul__responsive__li">
-                <a class="header__ul__responsive__li__a" href="../index.html"> <img
-                        class="header__ul__responsive__li__a__img" src="https://i.ibb.co/jD1yyn9/iconinicio.png"
-                        alt="homeIcon"></a>
+        <ul class="header__ul__responsive" id="menuResponsive">
+            <li class="header__ul__responsive__li"><a class="header__ul__responsive__li__link"
+                    href="./remeras.html">remeras</a></li>
+            <li class="header__ul__responsive__li"><a class="header__ul__responsive__li__link"
+                    href="./jeans.html">jeans</a>
             </li>
-
-            <li class="header__ul__responsive__li">
-                <a class="header__ul__responsive__li__a" href="remeras.html"><img
-                        class="header__ul__responsive__li__a__img" src="https://i.ibb.co/b3j1mDy/iconremera.png"
-                        alt="shirtIcon"></a>
+            <li class="header__ul__responsive__li"><a class="header__ul__responsive__li__link"
+                    href="./sweaters.html">sweaters</a>
             </li>
-
-            <li class="header__ul__responsive__li">
-                <a class="header__ul__responsive__li__a" href="jeans.html"><img
-                        class="header__ul__responsive__li__a__img" src="https://i.ibb.co/y01NXcS/iconjean.png"
-                        alt="jeanIcon"></a>
+            <li class="header__ul__responsive__li"><a class="header__ul__responsive__li__link"
+                    href="./accesorios.html">accesorios</a>
             </li>
-
-            <li class="header__ul__responsive__li">
-                <a class="header__ul__responsive__li__a" href="sweaters.html"><img
-                        class="header__ul__responsive__li__a__img" src="https://i.ibb.co/vDjXbST/iconsweater.png"
-                        alt="sweaterIcon"></a>
+            <li class="header__ul__responsive__li"><a class="header__ul__responsive__li__link"
+                    href="#footer">contacto</a>
             </li>
-
-            <li class="header__ul__responsive__li">
-                <a class="header__ul__responsive__li__a" href="accesorios.html"><img
-                        class="header__ul__responsive__li__a__img" src="https://i.ibb.co/zPxrJ8G/iconaccesorios.png"
-                        alt="accIcon"></a>
-            </li>
-
-            <li class="header__ul__responsive__li">
-                <a class=" header__ul__responsive__li__a" href="#footer"><img class="header__ul__responsive__li__a__img"
-                        src="https://i.ibb.co/pfWXqsc/iconcontacto.png" alt="contactIcon"></a>
-            </li>
-
+            <a href="./../index.html">
+                <img class="header__ul__responsive__li__img" src="https://i.ibb.co/371Xbvt/logo-redes-soc.jpg" alt="">
+            </a>
         </ul>
 
     </header>
@@ -148,17 +158,18 @@
         <section class="footer__datos">
 
             <strong class="footer__datos__texto footer__datos--size">
-                Horarios
+                horarios
             </strong>
             <p class="footer__datos__texto">
-                Lunes a Viernes : 10:00 - 17:00
+                lunes a viernes : 10:00 - 13:00 | 16:00 - 20:00
+
             </p>
             <p class="footer__datos__texto">
-                Sabados: Consultar horario personalizado.
+                sabados: 10:00 - 15:00
             </p>
 
             <strong class="footer__datos__texto footer__datos--size">
-                Envios a todo el pais
+                envios a todo el pais
             </strong>
 
         </section>
@@ -173,22 +184,22 @@
             <div>
                 <a href="https://www.instagram.com/1928showroom/" alt="instagram"><i
                         class="fab fa-instagram footer__redes__icon--efect footer__redes__icon--color footer__redes__icon--size"
-                        alt="instagram"></i>
+                        alt="enlace a instagram"></i>
                 </a>
             </div>
 
             <!-- Logo WhatsApp -->
             <div>
-                <a href="https://web.whatsapp.com/" alt="whatsapp"><i
+                <a href="https://wa.me/542914182420?text=Hola!%20Quisiera%20saber%20sobre%20..." alt="whatsapp"><i
                         class="fab fa-whatsapp footer__redes__icon--efect footer__redes__icon--color footer__redes__icon--size"
-                        alt="whatsapp"></i></a>
+                        alt="enlace a whatsapp"></i></a>
             </div>
 
             <!--Logo Facebook -->
             <div>
                 <a href="https://www.facebook.com/1928Showroom" alt="facebook"><i
                         class="fab fa-facebook footer__redes__icon--efect footer__redes__icon--color footer__redes__icon--size"
-                        alt="facebook"></i></a>
+                        alt="enlace a facebook"></i></a>
             </div>
 
             <!--Logo Youtube -->
@@ -196,7 +207,7 @@
                 <a href="https://www.youtube.com/watch?v=udHq9Mg14Os&list=PLh_NvDcNNnWq390fM8GM6DGzHektdYGxl"
                     alt="youtube"><i
                         class="fab fa-youtube footer__redes__icon--efect footer__redes__icon--color footer__redes__icon--size"
-                        alt="youtube"></i></a>
+                        alt="enlace a youtube"></i></a>
             </div>
 
             <!--Logo GMaps -->
@@ -204,13 +215,17 @@
                 <a href="https://www.google.com/maps/place/1928Showroom/@-38.7014701,-62.2759847,17z/data=!3m1!4b1!4m5!3m4!1s0x95edbb75fc14ba33:0x1faf91a144097c96!8m2!3d-38.7014743!4d-62.273796"
                     alt="ubicacion"><i
                         class="fas fa-map-marker-alt footer__redes__icon--efect footer__redes__icon--color footer__redes__icon--size"
-                        alt="ubicacion"></i></a>
+                        alt="enlace a google maps"></i></a>
             </div>
 
         </section>
 
     </footer>
     <!-- FIN  FOOTER  -->
+
+    <script src="./../scripts/menuResponsive.js"></script>
+
+
 
 </body>
 

@@ -28,7 +28,7 @@
 
     &__li {
       justify-content: center;
-      margin-left: 72px;
+      margin-left: 50px;
 
       &__a {
         text-decoration: none;
@@ -59,7 +59,7 @@
 }
 
 /*Media Queries  1100-320*/
-@media only screen and (max-width: $pcxl) and (min-width: $smartphone) {
+@media only screen and (max-width: 980px) and (min-width: $smartphone) {
   .header {
     &__ul {
       display: none;
@@ -78,7 +78,7 @@
         flex-direction: column;
 
         z-index: 10;
-        transition: 0.5s;
+        transition: 0.8s;
         background-color: white;
 
         &__hide {
@@ -97,7 +97,7 @@
 
         &__li {
           list-style: none;
-          margin: 25px;
+          margin: 20px;
 
           &__link {
             font-size: 20px;
@@ -110,6 +110,11 @@
           :hover {
             background-color: black;
             color: white;
+          }
+
+          &__img {
+            width: 200px;
+            height: 200px;
           }
         }
       }

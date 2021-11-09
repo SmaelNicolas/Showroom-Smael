@@ -56,7 +56,7 @@ body {
     padding-right: 25px; }
     .header__ul__li {
       justify-content: center;
-      margin-left: 72px; }
+      margin-left: 50px; }
       .header__ul__li__a {
         text-decoration: none; }
         .header__ul__li__a:hover {
@@ -95,7 +95,7 @@ body {
         display: none; }
 
 /*Media Queries  1100-320*/
-@media only screen and (max-width: 1100px) and (min-width: 320px) {
+@media only screen and (max-width: 980px) and (min-width: 320px) {
   .header__ul {
     display: none; }
     .header__ul__responsive {
@@ -110,7 +110,7 @@ body {
       align-items: center;
       flex-direction: column;
       z-index: 10;
-      transition: 0.5s;
+      transition: 0.8s;
       background-color: white; }
       .header__ul__responsive__hide {
         left: 0%; }
@@ -124,7 +124,7 @@ body {
         z-index: 999999; }
       .header__ul__responsive__li {
         list-style: none;
-        margin: 25px; }
+        margin: 20px; }
         .header__ul__responsive__li__link {
           font-size: 20px;
           color: black;
@@ -133,7 +133,10 @@ body {
           border-radius: 35px; }
         .header__ul__responsive__li :hover {
           background-color: black;
-          color: white; } }
+          color: white; }
+        .header__ul__responsive__li__img {
+          width: 200px;
+          height: 200px; } }
 
 .toTop {
   color: rgba(0, 0, 0, 0.521);
@@ -258,7 +261,6 @@ body {
   margin: auto 2em;
   position: relative;
   align-self: center;
-  text-transform: uppercase;
   z-index: 1;
   box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
   transform-origin: left bottom;
@@ -305,7 +307,8 @@ body {
   background-color: white; }
   .main__titulo__h2 {
     font-family: adenium;
-    font-size: 8vw; }
+    font-size: 8vw;
+    padding-bottom: 40px; }
   .main__destacados {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -321,7 +324,6 @@ body {
       .main__destacados__cardbox:hover {
         box-shadow: 0px 0px 30px 5px rgba(15, 15, 15, 0.575); }
       .main__destacados__cardbox__h3 {
-        font-family: BikoBold;
         text-decoration: underline; }
       .main__destacados__cardbox__texto {
         text-align: justify;
@@ -618,7 +620,7 @@ body {
     transform: rotate(0);
     opacity: 1; } }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 1000px) {
   .footer {
     flex-direction: column-reverse;
     height: 350px;
@@ -634,22 +636,3 @@ body {
       gap: 15px; } }
 
 /*Media Queries  1100-650*/
-@media only screen and (max-width: 1100px) and (min-width: 650px) {
-  .footer__redes {
-    gap: 2.1em; } }
-
-/*Media Queries  649-320*/
-@media only screen and (max-width: 650px) and (min-width: 320px) {
-  .footer {
-    flex-direction: column-reverse;
-    height: 350px;
-    padding-top: 25px; }
-    .footer__datos__texto {
-      text-align: center; }
-    .footer__linea {
-      width: 60%;
-      height: 5px;
-      background-color: #83837f;
-      border-radius: 50%; }
-    .footer__redes {
-      gap: 15px; } }
