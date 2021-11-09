@@ -1,17 +1,15 @@
-*{
-    margin:0 ;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    scroll-behavior: smooth;
-    font-family: Biko;
-    text-align:center;
-    list-style-type: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: EquinoxBold;
+  text-align: center;
+  list-style-type: none;
 }
 
-body{
-    width: calc(100% - 0);
-    background-color: $bgcolor;
-    
+body {
+  width: calc(100% - 0);
+  background-color: $bgcolor;
 }
-

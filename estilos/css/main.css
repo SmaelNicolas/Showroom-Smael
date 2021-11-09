@@ -4,7 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   scroll-behavior: smooth;
-  font-family: Biko;
+  font-family: EquinoxBold;
   text-align: center;
   list-style-type: none; }
 
@@ -19,6 +19,18 @@ body {
 @font-face {
   font-family: BikoBold;
   src: url(/estilos/biko_font/Biko_Bold.otf); }
+
+@font-face {
+  font-family: Adenium;
+  src: url(/estilos/adenium/Adenium.otf); }
+
+@font-face {
+  font-family: Equinox;
+  src: url(/estilos/equinox/EquinoxRegular.otf); }
+
+@font-face {
+  font-family: EquinoxBold;
+  src: url(/estilos/equinox/EquinoxBold.otf); }
 
 /* Animacion PULSACION*/
 /* Animacion ROTACION DE TEXTO */
@@ -148,7 +160,7 @@ body {
   margin: 0 auto;
   position: relative;
   background-color: white;
-  height: 500px; }
+  height: auto; }
 
 .glider-track {
   transform: translateZ(0);
@@ -185,7 +197,8 @@ body {
   opacity: 0;
   height: 0; }
 
-.glider-prev, .glider-next {
+.glider-prev,
+.glider-next {
   user-select: none;
   position: absolute;
   outline: none;
@@ -209,7 +222,7 @@ body {
 
 .glider-next.disabled,
 .glider-prev.disabled {
-  opacity: .25;
+  opacity: 0.25;
   color: #666;
   cursor: default; }
 
@@ -241,7 +254,7 @@ body {
 .btn {
   cursor: pointer;
   letter-spacing: 0.075em;
-  padding: .8em 1em;
+  padding: 0.8em 1em;
   margin: auto 2em;
   position: relative;
   align-self: center;
@@ -250,24 +263,24 @@ body {
   box-shadow: -0.5em 0.5em rgba(16, 24, 50, 0);
   transform-origin: left bottom;
   transition: all 200ms ease-in-out;
-  margin-top: 100px;
-  margin-bottom: 0px; }
+  margin-top: 6vw;
+  margin-bottom: 6vw; }
   .btn:before, .btn:after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     z-index: -1; }
   .btn:before {
     left: -0.59em;
-    top: .15em;
-    width: .31em;
+    top: 0.15em;
+    width: 0.31em;
     height: 100%;
     transform: skewY(-45deg); }
   .btn:after {
     bottom: -0.61em;
     right: 0.16em;
     width: 100%;
-    height: .31em;
+    height: 0.31em;
     transform: skewX(-45deg); }
   .btn:hover {
     background-size: 90%;
@@ -291,9 +304,8 @@ body {
   padding-bottom: 100px;
   background-color: white; }
   .main__titulo__h2 {
-    font-family: BikoBold;
-    font-size: 14vw;
-    text-shadow: 5px -2px rgba(15, 15, 15, 0.575); }
+    font-family: adenium;
+    font-size: 8vw; }
   .main__destacados {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -315,38 +327,22 @@ body {
         text-align: justify;
         line-height: 200%; }
         .main__destacados__cardbox__texto__palabra {
-          color: #C10230;
+          color: #c10230;
           font-size: x-large; }
       .main__destacados__cardbox__img {
         width: 100%;
         border-radius: 5%;
         border: 2px dotted rgba(0, 0, 0, 0.897); }
 
-/*Media Queries  1100-650*/
-@media only screen and (max-width: 1100px) and (min-width: 800px) {
-  .main__cardbox:hover {
-    cursor: unset; } }
-
-@media only screen and (max-width: 800px) and (min-width: 650px) {
+@media only screen and (max-width: 800px) and (min-width: 320px) {
+  .main__titulo__h2 {
+    font-size: 9.5vw; }
   .main__destacados {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 45px; } }
-
-/*Media Queries  649-320*/
-@media only screen and (max-width: 650px) and (min-width: 320px) {
-  .main__titulo__h2 {
-    text-shadow: 2px -2px rgba(15, 15, 15, 0.575); }
-  .main__destacados {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 45px; }
-  .main__cardbox:hover {
-    cursor: unset; } }
 
 .minitop {
   width: 100%;
