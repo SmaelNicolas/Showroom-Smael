@@ -565,6 +565,22 @@ body {
   writing-mode: vertical-rl;
   letter-spacing: 2px; }
 
+/* width */
+::-webkit-scrollbar {
+  width: 5px; }
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: black; }
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: black; }
+
 .footer {
   display: flex;
   flex-direction: row;
