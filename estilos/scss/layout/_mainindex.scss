@@ -20,7 +20,7 @@
       display: flex;
       flex-direction: column;
       padding: 1rem;
-      justify-content: space-between;
+      justify-content: space-around;
       border: 2px solid $color-black;
       border-radius: 25px;
 
@@ -35,6 +35,15 @@
       &__texto {
         text-align: justify;
         line-height: 200%;
+
+        &__link {
+          color: black;
+          text-decoration: none;
+
+          :hover {
+            color: #c10230;
+          }
+        }
 
         &__palabra {
           color: #c10230;
@@ -63,6 +72,10 @@
       align-items: center;
       justify-content: center;
       gap: 45px;
+
+      &__cardbox__texto {
+        height: auto;
+      }
     }
   }
 }

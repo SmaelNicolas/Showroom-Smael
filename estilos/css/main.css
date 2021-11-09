@@ -318,7 +318,7 @@ body {
       display: flex;
       flex-direction: column;
       padding: 1rem;
-      justify-content: space-between;
+      justify-content: space-around;
       border: 2px solid rgba(0, 0, 0, 0.897);
       border-radius: 25px; }
       .main__destacados__cardbox:hover {
@@ -328,6 +328,11 @@ body {
       .main__destacados__cardbox__texto {
         text-align: justify;
         line-height: 200%; }
+        .main__destacados__cardbox__texto__link {
+          color: black;
+          text-decoration: none; }
+          .main__destacados__cardbox__texto__link :hover {
+            color: #c10230; }
         .main__destacados__cardbox__texto__palabra {
           color: #c10230;
           font-size: x-large; }
@@ -344,7 +349,9 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 45px; } }
+    gap: 45px; }
+    .main__destacados__cardbox__texto {
+      height: auto; } }
 
 .minitop {
   width: 100%;
