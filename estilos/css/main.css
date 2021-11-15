@@ -55,10 +55,12 @@ body {
     margin: 0;
     padding-right: 25px; }
     .header__ul__li {
-      justify-content: center;
-      margin-left: 50px; }
+      justify-content: center; }
       .header__ul__li__a {
-        text-decoration: none; }
+        text-decoration: none;
+        margin: 3px;
+        padding: 10px 20px;
+        border-radius: 35px; }
         .header__ul__li__a:hover {
           color: black; }
         .header__ul__li__a__text--color {
@@ -355,13 +357,80 @@ body {
 
 .minitop {
   width: 100%;
+  height: 30px;
   background-color: black;
-  text-align: end;
   color: white;
   font-size: 12px;
   font-weight: 100;
   padding-right: 20px;
-  z-index: 9997; }
+  padding-left: 20px;
+  z-index: 9997;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.miniTopText {
+  margin-bottom: 0px; }
+
+.buttonDarkMode {
+  width: 50px;
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer; }
+
+.buttonDarkModeSun {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../svg/sun-regular.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 50%;
+  display: none;
+  transition: 1s; }
+
+.buttonDarkModeMoon {
+  width: 20px;
+  height: 20px;
+  background-image: url(../../../svg/moon-solid.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  border-radius: 50%;
+  display: flex; }
+
+.show {
+  display: flex;
+  transition: 1s; }
+
+.hide {
+  display: none;
+  transition: 1s; }
+
+.makeDark {
+  background-color: black;
+  color: white; }
+
+.makeDarkBgWhite {
+  background-color: white;
+  color: black; }
+
+.makeDarkTextWhite {
+  color: white; }
+
+.makeDarkBorder {
+  border: 2px solid white; }
+
+.makeDarkHover {
+  color: white; }
+  .makeDarkHover .header__ul__li__a__text--color:hover {
+    color: white; }
 
 @media only screen and (max-width: 650px) and (min-width: 320px) {
   .minitop {
@@ -387,7 +456,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__1x2 {
       width: 500px;
@@ -396,7 +465,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__1x3 {
       width: 500px;
@@ -405,7 +474,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__1x4 {
       width: 500px;
@@ -414,7 +483,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__1x5 {
       width: 500px;
@@ -423,7 +492,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__2x1 {
       width: 500px;
@@ -432,7 +501,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__2x2 {
       width: 500px;
@@ -441,7 +510,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__2x3 {
       width: 500px;
@@ -450,7 +519,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__2x4 {
       width: 500px;
@@ -459,7 +528,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__2x5 {
       width: 500px;
@@ -468,7 +537,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__3x1 {
       width: 500px;
@@ -477,7 +546,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__3x2 {
       width: 500px;
@@ -486,7 +555,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__3x3 {
       width: 500px;
@@ -495,7 +564,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__3x4 {
       width: 500px;
@@ -504,7 +573,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__3x5 {
       width: 500px;
@@ -513,7 +582,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__4x1 {
       width: 500px;
@@ -522,7 +591,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__4x2 {
       width: 500px;
@@ -531,7 +600,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__4x3 {
       width: 500px;
@@ -540,7 +609,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__4x4 {
       width: 500px;
@@ -549,7 +618,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
     .main__productos__grid__4x5 {
       width: 500px;
@@ -558,7 +627,7 @@ body {
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
-      border: 1px solid black;
+      border: 1px solid white;
       border-radius: 10px; }
 
 .webBy {

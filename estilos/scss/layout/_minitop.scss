@@ -1,17 +1,98 @@
 .minitop {
-  width: 100%;
-  background-color: black;
-  text-align: end;
-  color: white;
-  font-size: 12px;
-  font-weight: 100;
-  padding-right: 20px;
-  z-index: 9997;
+	width: 100%;
+	height: 30px;
+	background-color: black;
+	color: white;
+	font-size: 12px;
+	font-weight: 100;
+	padding-right: 20px;
+	padding-left: 20px;
+	z-index: 9997;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.miniTopText {
+	margin-bottom: 0px;
+}
+
+.buttonDarkMode {
+	width: 50px;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+}
+
+.buttonDarkModeSun {
+	width: 20px;
+	height: 20px;
+	background-image: url(../../../svg/sun-regular.svg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+
+	background-color: white;
+	border-radius: 50%;
+	display: none;
+
+	transition: 1s;
+}
+
+.buttonDarkModeMoon {
+	width: 20px;
+	height: 20px;
+	background-image: url(../../../svg/moon-solid.svg);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-color: white;
+	border-radius: 50%;
+	display: flex;
+}
+
+.show {
+	display: flex;
+	transition: 1s;
+}
+
+.hide {
+	display: none;
+	transition: 1s;
+}
+
+.makeDark {
+	background-color: black;
+	color: white;
+}
+
+.makeDarkBgWhite {
+	background-color: white;
+	color: black;
+}
+
+.makeDarkTextWhite {
+	color: white;
+}
+
+.makeDarkBorder {
+	border: 2px solid white;
+}
+
+.makeDarkHover {
+	color: white;
+	.header__ul__li__a__text--color:hover {
+		color: white;
+	}
 }
 
 @media only screen and (max-width: $tablet) and (min-width: $smartphone) {
-  .minitop {
-    text-align: center;
-    padding-right: 0px;
-  }
+	.minitop {
+		text-align: center;
+		padding-right: 0px;
+	}
 }

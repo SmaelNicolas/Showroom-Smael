@@ -1,81 +1,81 @@
 .main {
-  padding-top: 50px;
-  padding-bottom: 100px;
-  background-color: $bgcolor;
+	padding-top: 50px;
+	padding-bottom: 100px;
+	background-color: $bgcolor;
 
-  &__titulo__h2 {
-    font-family: adenium;
+	&__titulo__h2 {
+		font-family: adenium;
 
-    font-size: 8vw;
-    padding-bottom: 40px;
-  }
+		font-size: 8vw;
+		padding-bottom: 40px;
+	}
 
-  &__destacados {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1em;
-    padding: 5px 10px 0px 10px;
+	&__destacados {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1em;
+		padding: 5px 10px 0px 10px;
 
-    &__cardbox {
-      display: flex;
-      flex-direction: column;
-      padding: 1rem;
-      justify-content: space-around;
-      border: 2px solid $color-black;
-      border-radius: 25px;
+		&__cardbox {
+			display: flex;
+			flex-direction: column;
+			padding: 1rem;
+			justify-content: space-around;
+			border: 2px solid $color-black;
+			border-radius: 25px;
 
-      &:hover {
-        box-shadow: 0px 0px 30px 5px $shadowcolor2;
-      }
+			&:hover {
+				box-shadow: 0px 0px 30px 5px $shadowcolor2;
+			}
 
-      &__h3 {
-        text-decoration: underline;
-      }
+			&__h3 {
+				text-decoration: underline;
+			}
 
-      &__texto {
-        text-align: justify;
-        line-height: 200%;
+			&__texto {
+				text-align: justify;
+				line-height: 200%;
 
-        &__link {
-          color: black;
-          text-decoration: none;
+				&__link {
+					color: black;
+					text-decoration: none;
 
-          :hover {
-            color: #c10230;
-          }
-        }
+					:hover {
+						color: #c10230;
+					}
+				}
 
-        &__palabra {
-          color: #c10230;
-          font-size: x-large;
-        }
-      }
+				&__palabra {
+					color: #c10230;
+					font-size: x-large;
+				}
+			}
 
-      &__img {
-        width: 100%;
-        border-radius: 5%;
-        border: 2px dotted $color-black;
-      }
-    }
-  }
+			&__img {
+				width: 100%;
+				border-radius: 5%;
+				border: 2px dotted $color-black;
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: $midTabletPc) and (min-width: $smartphone) {
-  .main {
-    &__titulo__h2 {
-      font-size: 9.5vw;
-    }
+	.main {
+		&__titulo__h2 {
+			font-size: 9.5vw;
+		}
 
-    &__destacados {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 45px;
+		&__destacados {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			gap: 45px;
 
-      &__cardbox__texto {
-        height: auto;
-      }
-    }
-  }
+			&__cardbox__texto {
+				height: auto;
+			}
+		}
+	}
 }

@@ -1,36 +1,30 @@
-.main__productos{
+.main__productos {
+	background-color: $bgcolor;
+	padding: 100px 10px 100px 10px;
 
-    background-color: $bgcolor;
-    padding: 100px 10px 100px 10px;
+	&__grid {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		gap: 8em;
+		padding-top: 15px;
 
-
-    &__grid{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        gap: 8em;
-        padding-top: 15px;
-    
-        /* 1er @for > Cantidad de htmls , en mi caso tengo 4 productos con el mismo main*/
-           /* 2do @for > Cantidad de imagenes que quiero agregar*/
-                /*Cambie le nombre de las imagenes a la forma ixn , por ejemplo remera es el 1er html entonces la 1er imagen de remera va a ser 1x1, la segunda 1x2 y asi con todas las imagenes, a medida q agrego imagenes agreo un div con la clase ixn*/
-        @for $cantidad_html from 1 through 4 {
-          
-            @for $cantidad_imagenes from 1 through 5 {
-                
-                &__#{$cantidad_html}x#{$cantidad_imagenes}{
-                    width: 500px;
-                    height: 550px;
-                    background-image: url(./img/#{$cantidad_html}#{$cantidad_imagenes}.jpeg);
-                    background-position: center;
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    border: 1px solid black;
-                    border-radius: 10px;
-                }
-            }
-            
-        }
-
-    }
+		/* 1er @for > Cantidad de htmls , en mi caso tengo 4 productos con el mismo main*/
+		/* 2do @for > Cantidad de imagenes que quiero agregar*/
+		/*Cambie le nombre de las imagenes a la forma ixn , por ejemplo remera es el 1er html entonces la 1er imagen de remera va a ser 1x1, la segunda 1x2 y asi con todas las imagenes, a medida q agrego imagenes agreo un div con la clase ixn*/
+		@for $cantidad_html from 1 through 4 {
+			@for $cantidad_imagenes from 1 through 5 {
+				&__#{$cantidad_html}x#{$cantidad_imagenes} {
+					width: 500px;
+					height: 550px;
+					background-image: url(./img/#{$cantidad_html}#{$cantidad_imagenes}.jpeg);
+					background-position: center;
+					background-size: cover;
+					background-repeat: no-repeat;
+					border: 1px solid white;
+					border-radius: 10px;
+				}
+			}
+		}
+	}
 }

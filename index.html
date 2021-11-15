@@ -37,6 +37,7 @@
     <!-- SCRIPTS -->
     <script src="./scripts/glider.js"></script>
 
+
     <!-- LINK SCSS MAIN -->
     <link rel="stylesheet" href="estilos/css/main.css">
 
@@ -51,7 +52,13 @@
 <body>
     <!--Mini barra top-->
     <div class="minitop">
-        291 418-2420 - panamá 1259, bahia Blanca.
+        <div class="buttonDarkMode" id="buttonDarkMode">
+            <i class="buttonDarkModeSun " id="buttonDarkModeSun"></i>
+            <i class="buttonDarkModeMoon" id="buttonDarkModeMoon"></i>
+        </div>
+        <p class="miniTopText">
+            291 418-2420 - panamá 1259, bahia Blanca.
+        </p>
     </div>
     <!-- Fin mini barra top-->
 
@@ -62,7 +69,8 @@
         <section class="header__logo ">
             <a href="./index.html">
 
-                <img class="header__logo__img" src="https://i.ibb.co/8KPgndf/logo.png" alt="logo de 1928 Showroom">
+                <img class="header__logo__img" id="logo" src="https://i.ibb.co/8KPgndf/logo.png"
+                    alt="logo de 1928 Showroom">
             </a>
         </section>
 
@@ -175,9 +183,10 @@
 
 
     <!-- Boton ver mas -->
-    <div class="button__container">
+    <div class="button__container" id="buttonVerMasContainer">
 
-        <a class="btn cta bg" onclick="location.href='https://www.instagram.com/1928showroom/'" type="button">ver
+        <a class="btn cta bg" id="buttonVerMas" onclick="location.href='https://www.instagram.com/1928showroom/'"
+            type="button">ver
             mas</a>
 
     </div>
@@ -317,6 +326,8 @@
 
 
     <script src="./scripts/menuResponsive.js"></script>
+    <script src="./scripts/toggleDark.js"></script>
+
 </body>
 
 </html>
