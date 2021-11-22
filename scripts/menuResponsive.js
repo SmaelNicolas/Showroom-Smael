@@ -10,5 +10,6 @@ menuButton.addEventListener("click", () => {
 window.onscroll = () => {
 	if (this.scrollY > 50) {
 		menuResponsive.classList.remove("header__ul__responsive__hide");
+		menuButton.classList.remove("active");
 	}
 };
