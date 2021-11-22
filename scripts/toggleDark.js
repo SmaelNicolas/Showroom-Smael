@@ -8,6 +8,7 @@ let main = document.getElementById("destacados");
 let cards = document.getElementsByClassName("main__destacados__cardbox");
 let buttonVerMas = document.getElementById("buttonVerMas");
 let change = true;
+let menuButton2 = document.getElementById("menuButton2");
 
 let header = document.getElementById("header");
 let headerResponsive = document.getElementById("menuResponsive");
@@ -25,6 +26,7 @@ makeDark.addEventListener("click", () => {
 	buttonVerMasContainer.classList.toggle("makeDark");
 	main.classList.toggle("makeDark");
 	buttonVerMas.classList.toggle("makeDark");
+	menuButton2.classList.toggle("menuIcon__span");
 
 	if (change) {
 		logo.setAttribute(

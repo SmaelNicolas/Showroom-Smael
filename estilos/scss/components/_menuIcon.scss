@@ -1,0 +1,59 @@
+.menuIcon {
+	position: relative;
+	width: 70px;
+	height: 70px;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+
+	display: none;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	overflow: hidden;
+
+	border-radius: 50%;
+}
+
+.menuIcon span {
+	position: absolute;
+	width: 40px;
+	height: 4px;
+	background-color: black;
+	border-radius: 4px;
+	transition: 0.5s;
+}
+
+.menuIcon span:nth-child(1) {
+	transform: translateY(-15px);
+	width: 25px;
+	left: 15px;
+}
+.menuIcon.active span:nth-child(1) {
+	width: 40px;
+	transform: translateY(0px) rotate(45deg);
+	transition-delay: 0.125s;
+}
+
+.menuIcon span:nth-child(2) {
+	transform: translateY(15px);
+	width: 15px;
+	left: 15px;
+}
+.menuIcon.active span:nth-child(2) {
+	width: 40px;
+	transform: translateY(0px) rotate(315deg);
+	transition-delay: 0.25s;
+}
+
+.menuIcon.active span:nth-child(3) {
+	transform: translateX(60px);
+}
+
+.menuIcon__span {
+	background-color: white;
+}
+
+@media only screen and (max-width: 980px) and (min-width: $smartphone) {
+	.menuIcon {
+		display: flex;
+	}
+}
