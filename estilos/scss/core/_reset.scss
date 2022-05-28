@@ -27,7 +27,7 @@ body {
 .nuevaWeb div {
 	color: white;
 	font-family: "Courier New", Courier, monospace;
-	font-size: 40px;
+	font-size: calc(20px + 1vw);
 }
 
 .container {
@@ -35,9 +35,11 @@ body {
 	flex-direction: row;
 	flex-wrap: wrap;
 
-	gap: 100px;
-
 	justify-content: center;
 	align-items: center;
 	padding: 20px 0px;
+}
+
+.timeCountdown {
+	padding: 10px;
 }
