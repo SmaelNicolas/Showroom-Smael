@@ -29,3 +29,15 @@ body {
 	font-family: "Courier New", Courier, monospace;
 	font-size: 40px;
 }
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+
+	gap: 100px;
+
+	justify-content: center;
+	align-items: center;
+	padding: 20px 0px;
+}
