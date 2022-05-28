@@ -1,15 +1,31 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-  font-family: EquinoxBold;
-  text-align: center;
-  list-style-type: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	scroll-behavior: smooth;
+	font-family: EquinoxBold;
+	text-align: center;
+	list-style-type: none;
 }
 
 body {
-  width: calc(100% - 0);
-  background-color: $bgcolor;
+	width: calc(100% - 0);
+	background-color: $bgcolor;
+}
+
+.nuevaWeb {
+	width: 100%;
+	height: 100vh;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nuevaWeb div {
+	color: white;
+	font-family: "Courier New", Courier, monospace;
+	font-size: 40px;
 }

@@ -12,6 +12,20 @@ body {
   width: calc(100% - 0);
   background-color: white; }
 
+.nuevaWeb {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.nuevaWeb div {
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 40px; }
+
 @font-face {
   font-family: Biko;
   src: url(/estilos/biko_font/Biko_Regular.otf); }
