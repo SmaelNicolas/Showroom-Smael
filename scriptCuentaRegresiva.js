@@ -28,8 +28,8 @@ const addHTML = (d, h, m, s) => {
 	secondsEtiquette.innerHTML = s;
 };
 const calculate = () => {
-	let d = 30;
-	let m = "may";
+	let d = 17;
+	let m = "jun";
 	let y = 2022;
 	date = `${d} ${m} ${y}`;
 	setInterval(countDown, 1000);
